@@ -1,0 +1,60 @@
+INVENTARIO DE MEDIOS - HYDROCELL
+======================================================================
+
+IMÁGENES DESCARGADAS: 16 / 33
+(carpeta: imagenes/)
+
+-- DESCARGADAS OK --
+  ✓ 18028269-994b-4af9-93aa-5da199113d4c_638884734826996966.jpg  (9,609 bytes)  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/18028269-994b-4af9-93aa-5da199113d4c_638884734826996966.jpg
+  ✓ 1ee1fabd-0d66-4745-a261-1bb064519495_638892521759442341_.jpeg  (144,786 bytes)  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/1ee1fabd-0d66-4745-a261-1bb064519495_638892521759442341_.jpeg
+  ✓ 4ce237b2-1370-45dd-822f-d7bba0cab763_638890838738912196_.jpeg  (851,030 bytes)  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/4ce237b2-1370-45dd-822f-d7bba0cab763_638890838738912196_.jpeg
+  ✓ 5c69fafd-cecb-4753-8aca-8c956baea1fc_638888166559396842_.jpeg  (1,196,987 bytes)  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/5c69fafd-cecb-4753-8aca-8c956baea1fc_638888166559396842_.jpeg
+  ✓ 653467ba-1de1-4e2c-9e6b-b3453ea1785f_638888172318486493_.jpeg  (1,406,772 bytes)  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/653467ba-1de1-4e2c-9e6b-b3453ea1785f_638888172318486493_.jpeg
+  ✓ 9845ed8f-eaf2-49e3-9c17-bd323c878547_638881993571537669_.jpeg  (275,207 bytes)  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/9845ed8f-eaf2-49e3-9c17-bd323c878547_638881993571537669_.jpeg
+  ✓ 9aad674b-f6e6-4c01-9733-e96a1f0c781f_638884711432395738_.jpeg  (966,918 bytes)  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/9aad674b-f6e6-4c01-9733-e96a1f0c781f_638884711432395738_.jpeg
+  ✓ 9b90f6e0-a4a8-49c2-ae9c-51d1e5e9672b_638890849752263385_.jpeg  (53,329 bytes)  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/9b90f6e0-a4a8-49c2-ae9c-51d1e5e9672b_638890849752263385_.jpeg
+  ✓ 9d1aa914-df24-46b0-86ec-782c51cb210f_638888164689511582_.jpeg  (943,955 bytes)  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/9d1aa914-df24-46b0-86ec-782c51cb210f_638888164689511582_.jpeg
+  ✓ b2db4cb1-e7c3-47f1-aa47-87bb3b378e7c_638884720591385523_.jpeg  (880,602 bytes)  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/b2db4cb1-e7c3-47f1-aa47-87bb3b378e7c_638884720591385523_.jpeg
+  ✓ b4042ea1-d77f-4e38-824d-e1ff3f778b80_638914158039060239_.jpeg  (100,673 bytes)  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/b4042ea1-d77f-4e38-824d-e1ff3f778b80_638914158039060239_.jpeg
+  ✓ bc4d59ea-2ce0-44f2-9106-84e509921f02_638888162853097549_.jpeg  (1,402,492 bytes)  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/bc4d59ea-2ce0-44f2-9106-84e509921f02_638888162853097549_.jpeg
+  ✓ bf9c7981-c6ca-4836-bca9-5df854687025_638887357393805590_.jpeg  (92,220 bytes)  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/bf9c7981-c6ca-4836-bca9-5df854687025_638887357393805590_.jpeg
+  ✓ d860926d-33a0-4b63-8fc1-886171889cd9_638887376277938921_.jpeg  (2,265,437 bytes)  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/d860926d-33a0-4b63-8fc1-886171889cd9_638887376277938921_.jpeg
+  ✓ e34796d8-c5ad-44d6-b004-01463cc1d6e6_638898676329246426_.jpeg  (1,100,071 bytes)  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/e34796d8-c5ad-44d6-b004-01463cc1d6e6_638898676329246426_.jpeg
+  ✓ eb5d9f89-48f1-452f-a646-e492a2fd423d_638887358981686621_.jpeg  (117,687 bytes)  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/eb5d9f89-48f1-452f-a646-e492a2fd423d_638887358981686621_.jpeg
+
+-- NO DISPONIBLES (HTTP 404 desde el CDN) --
+  ✗ 04b8b9a2-c2c7-48cf-a4fb-fd91ea50220a_638892508452545164_.jpeg  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/04b8b9a2-c2c7-48cf-a4fb-fd91ea50220a_638892508452545164_.jpeg
+  ✗ 1b50bbf4-5c52-48b7-87be-14510cde1366_638882025315794006_.jpeg  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/1b50bbf4-5c52-48b7-87be-14510cde1366_638882025315794006_.jpeg
+  ✗ 4902689f-0248-4136-a163-68e4851787ab_638882027735386551_.jpeg  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/4902689f-0248-4136-a163-68e4851787ab_638882027735386551_.jpeg
+  ✗ 4c8176ce-dd61-4b89-9113-e1557b4dbbec_638883796854791353_.jpeg  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/4c8176ce-dd61-4b89-9113-e1557b4dbbec_638883796854791353_.jpeg
+  ✗ 4fe38446-6e9a-4104-a7d9-57dfe2c9ca70_638890846475581538_.jpeg  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/4fe38446-6e9a-4104-a7d9-57dfe2c9ca70_638890846475581538_.jpeg
+  ✗ 5b59b66e-7c5b-4913-821b-e6039b5a809c_638888164304488150_.jpeg  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/5b59b66e-7c5b-4913-821b-e6039b5a809c_638888164304488150_.jpeg
+  ✗ 73d88b3b-7d52-495d-8bcb-db6362746f9c_638901154956544855_.jpeg  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/73d88b3b-7d52-495d-8bcb-db6362746f9c_638901154956544855_.jpeg
+  ✗ 758d6abf-82f8-418d-ba1a-3cbde9a43b02_638888170260552779_.jpeg  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/758d6abf-82f8-418d-ba1a-3cbde9a43b02_638888170260552779_.jpeg
+  ✗ 78d398f8-554a-41b9-9a8e-dc56f9ec17fb_638901152420091104_.jpeg  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/78d398f8-554a-41b9-9a8e-dc56f9ec17fb_638901152420091104_.jpeg
+  ✗ 8abbdf20-bf9c-44c4-b661-662f82f62f2b_638890840840043703_.jpeg  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/8abbdf20-bf9c-44c4-b661-662f82f62f2b_638890840840043703_.jpeg
+  ✗ 8bc632bf-079c-4e5a-aa60-a330710ea04b_638901153503018074_.jpeg  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/8bc632bf-079c-4e5a-aa60-a330710ea04b_638901153503018074_.jpeg
+  ✗ ab4aecae-a596-435c-a656-5e9ef8f54037_638891599698342213_.jpeg  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/ab4aecae-a596-435c-a656-5e9ef8f54037_638891599698342213_.jpeg
+  ✗ ae8c1fcf-b46f-4b30-ad93-ef9a76333e0d_638882937195285823_.jpeg  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/ae8c1fcf-b46f-4b30-ad93-ef9a76333e0d_638882937195285823_.jpeg
+  ✗ cf83fa10-1ff6-4859-9c68-731e6240723b_638883758252437162_.jpeg  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/cf83fa10-1ff6-4859-9c68-731e6240723b_638883758252437162_.jpeg
+  ✗ e4353d03-952f-4242-84a7-1125584784ac_638882959199632841_.jpeg  ←  https://d264tuzfk424fk.cloudfront.net/LandingPagePictures/e4353d03-952f-4242-84a7-1125584784ac_638882959199632841_.jpeg
+  ✗ 9efbd22a-e12b-44a5-b1aa-9f70792b35d1_638881941049149088_.png  ←  https://inigoappdata.blob.core.windows.net/tempfilespace/LandingPagePictures/9efbd22a-e12b-44a5-b1aa-9f70792b35d1_638881941049149088_.png
+  ✗ f39fb21d-7032-4bce-8f78-c10f0207bdf5_638881941801607785_.png  ←  https://inigoappdata.blob.core.windows.net/tempfilespace/LandingPagePictures/f39fb21d-7032-4bce-8f78-c10f0207bdf5_638881941801607785_.png
+
+
+VIDEOS EXTERNOS:
+----------------------------------------------------------------------
+  • https://vimeo.com/1112139252?share=copy
+  • https://www.youtube.com/watch?v=2cvxutGLdBU
+  • https://www.youtube.com/watch?v=6tZRNGB5Iso
+
+
+SCREENSHOTS DE LAS PÁGINAS (carpeta screenshots/):
+----------------------------------------------------------------------
+  • an_lisis_de_gases.png  (420,309 bytes)
+  • desinfecci_n_interna.png  (339,144 bytes)
+  • quienes_somos.png  (774,801 bytes)
+  • home.png  (992,913 bytes)
+  • limpieza_aceleraci_n.png  (508,914 bytes)
+  • descarbonizaci_n_.png  (2,058,698 bytes)
+  • precios.png  (84,892 bytes)
