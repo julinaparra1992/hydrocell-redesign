@@ -1,0 +1,11 @@
+.DS_Store
+hydrocell-data-raw.json
+auditoria-playwright-real.png
+preview*.png
+homepage_render.png
+.claude/
+referencias-imagenes/_screenshots/
+referencias-imagenes/*/preview*.png
+stitch-output/variantes/*/preview*.png
+stitch-output/preview_*.png
+stitch-output/variantes/_MANUAL_backup/
