@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Limpieza Cuerpo de Aceleración · HYDROCELL</title>
+<meta name="description" content="Limpieza profesional del cuerpo de aceleración.">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        cyan: { 500: '#00b9b5', 600: '#3bb4c3', 700: '#0a8a86', 50: '#e6f7f6' },
+        green: { 500: '#4EBD8D', 50: '#edf9f3' },
+        ink: { 950: '#0a1620', 900: '#0e2f3e', 700: '#1a4a5e', 500: '#5a7785', 300: '#94a3b8', 100: '#e8eef2' },
+      },
+      fontFamily: { display: ['Barlow Condensed', 'sans-serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }
+    }
+  }
+}
+</script>
+<style>
+body { font-family: 'Inter', system-ui, sans-serif; color: #0e2f3e; }
+.material-symbols-outlined { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+h1, h2, h3, .display { font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.01em; }
+.diagonal-cut { clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%); }
+</style>
+</head>
+<body class="bg-white">
+<div class="bg-cyan-700 text-white text-xs">
+  <div class="max-w-7xl mx-auto px-6 py-2 flex flex-wrap justify-between items-center gap-2">
+    <div class="flex items-center gap-5 text-white/90">
+      <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">phone</span>314 703 0001</span>
+      <span class="hidden md:flex items-center gap-1.5"><span class="material-symbols-outlined text-base">mail</span>contacto@hydrocell.com</span>
+      <span class="hidden lg:flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span>Lun-Sáb 8am-6pm</span>
+    </div>
+    <div class="flex items-center gap-4 font-bold uppercase tracking-wider">
+      <span>🇨🇴 100% Colombiano · Desde 2013</span>
+    </div>
+  </div>
+</div>
+<header class="sticky top-0 z-50 bg-white border-b-2 border-cyan-500 shadow-md">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="block"><img src="logo.png" alt="HYDROCELL" class="h-12 w-auto"></a>
+    <nav class="hidden md:flex gap-5 items-center font-display text-base uppercase font-semibold tracking-wide text-ink-900">
+      <a href="quienes-somos.html" class="hover:text-cyan-500 transition">Quiénes Somos</a>
+      <a href="descarbonizacion.html" class="hover:text-cyan-500 transition">Descarbonización</a>
+      <a href="analisis-gases.html" class="hover:text-cyan-500 transition">Análisis de Gases</a>
+      <a href="limpieza-aceleracion.html" class="hover:text-cyan-500 transition">Limpieza</a>
+      <a href="desinfeccion.html" class="hover:text-cyan-500 transition">Desinfección</a>
+      <a href="precios.html" class="hover:text-cyan-500 transition">Precios</a>
+    </nav>
+    <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-white font-bold font-display uppercase px-5 py-2.5 text-sm transition">
+      <span class="material-symbols-outlined text-base">chat</span>¡Contáctanos!
+    </a>
+  </div>
+</header>
+<section class="relative bg-ink-950 text-white overflow-hidden diagonal-cut">
+  <div class="absolute inset-0">
+    <img src="assets/limpieza-aceleracion-hero.jpg" alt="" class="w-full h-full object-cover opacity-50">
+    <div class="absolute inset-0 bg-gradient-to-r from-ink-950 via-ink-950/80 to-ink-950/40"></div>
+  </div>
+  <div class="relative max-w-7xl mx-auto px-6 py-20 md:py-28">
+    <div class="max-w-3xl">
+      <p class="text-cyan-500 font-display uppercase tracking-[0.3em] text-sm font-bold mb-4">— MANTENIMIENTO ESENCIAL</p>
+      <h1 class="font-display font-black text-5xl md:text-7xl uppercase leading-[0.95] mb-6">
+        LIMPIEZA DEL CUERPO<br><span class="text-cyan-500">DE ACELERACIÓN</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl">¡Mejora el rendimiento de tu motor en minutos! Recupera la respuesta original del acelerador, reduce el consumo de combustible y evita fallos por suciedad acumulada.</p>
+      <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-ink-950 font-bold font-display uppercase px-8 py-4 text-lg transition">
+        <span class="material-symbols-outlined">chat</span> ¡SOLICITA TU CITA AHORA!
+      </a>
+    </div>
+  </div>
+</section>
+<section class="py-20 px-6 bg-white"><div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center"><div>
+      <p class="text-cyan-500 font-display uppercase tracking-[0.3em] text-sm font-bold mb-4">— POR QUÉ ES IMPORTANTE</p>
+      <h2 class="font-display font-black text-4xl md:text-5xl uppercase text-ink-900 leading-none mb-6">¿QUÉ ES Y POR QUÉ HACERLO?</h2>
+      <p class="text-ink-700 text-lg leading-relaxed mb-4">El cuerpo de aceleración regula el flujo de aire al motor. Con el tiempo, se ensucia con residuos de carbono y aceite, provocando aceleraciones lentas, inestabilidad en ralentí y fallos electrónicos. Su limpieza es esencial para mantener el motor en óptimas condiciones.</p>
+    </div><div><img src="assets/limpieza-aceleracion-detail.jpg" alt="¿QUÉ ES Y POR QUÉ HACERLO?" class="w-full aspect-square object-cover shadow-2xl"></div></div></section><section class="py-20 px-6 bg-ink-100">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <p class="text-cyan-500 font-display uppercase tracking-[0.3em] text-sm font-bold mb-4">— BENEFICIOS</p>
+      <h2 class="font-display font-black text-4xl md:text-6xl uppercase text-ink-900 leading-none">BENEFICIOS DE LA <span class="text-cyan-500">LIMPIEZA</span></h2>
+    </div>
+    <div class="grid md:grid-cols-5 gap-0 border-2 border-cyan-500/20">
+      <div class="bg-white p-6 text-center border-r border-cyan-500/10 last:border-r-0">
+        <div class="text-4xl mb-3">🔧</div>
+        <p class="text-ink-700 text-sm">Mejora la respuesta del pedal del acelerador</p>
+      </div>
+      <div class="bg-white p-6 text-center border-r border-cyan-500/10 last:border-r-0">
+        <div class="text-4xl mb-3">🌬️</div>
+        <p class="text-ink-700 text-sm">Estabiliza las revoluciones en ralentí</p>
+      </div>
+      <div class="bg-white p-6 text-center border-r border-cyan-500/10 last:border-r-0">
+        <div class="text-4xl mb-3">⛽</div>
+        <p class="text-ink-700 text-sm">Reduce el consumo de combustible</p>
+      </div>
+      <div class="bg-white p-6 text-center border-r border-cyan-500/10 last:border-r-0">
+        <div class="text-4xl mb-3">🚨</div>
+        <p class="text-ink-700 text-sm">Evita códigos de error y fallos de encendido</p>
+      </div>
+      <div class="bg-white p-6 text-center border-r border-cyan-500/10 last:border-r-0">
+        <div class="text-4xl mb-3">⚙️</div>
+        <p class="text-ink-700 text-sm">Optimiza el flujo de aire al motor</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-20 px-6 bg-white">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div><img src="assets/limpieza-aceleracion-odometro.png" alt="Odómetro" class="w-full aspect-square object-cover shadow-2xl"></div>
+    <div>
+      <p class="text-cyan-500 font-display uppercase tracking-[0.3em] text-sm font-bold mb-4">— PERIODICIDAD</p>
+      <h2 class="font-display font-black text-4xl md:text-5xl uppercase text-ink-900 leading-none mb-8">¿CADA CUÁNTO SE <span class="text-cyan-500">RECOMIENDA</span>?</h2>
+      <div class="space-y-4">
+        <div class="flex items-center gap-6 bg-ink-100 p-6 border-l-4 border-cyan-500">
+          <span class="material-symbols-outlined text-cyan-500" style="font-size:48px">schedule</span>
+          <div>
+            <p class="font-display font-black text-3xl text-ink-900">CADA 10.000 KM</p>
+            <p class="text-ink-500">Con cada cambio de aceite</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-6 bg-ink-100 p-6 border-l-4 border-green-500">
+          <span class="material-symbols-outlined text-green-500" style="font-size:48px">oil_barrel</span>
+          <div>
+            <p class="font-display font-black text-3xl text-ink-900">CADA 5.000 KM</p>
+            <p class="text-ink-500">Si usas aceite mineral</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-24 px-6 bg-white">
+  <div class="max-w-5xl mx-auto text-center">
+    <p class="text-cyan-500 font-display uppercase tracking-[0.3em] text-sm font-bold mb-4">— EL MOMENTO ES AHORA</p>
+    <h2 class="font-display font-black text-5xl md:text-7xl uppercase text-ink-900 leading-none mb-8">
+      ¡CUIDA EL CORAZÓN<br><span class="text-cyan-500">DE TU MOTOR!</span>
+    </h2>
+    <p class="text-xl text-ink-700 mb-10 max-w-2xl mx-auto">Una limpieza a tiempo previene reparaciones costosas y mejora el desempeño general del vehículo.</p>
+    <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="inline-flex items-center gap-3 bg-cyan-500 hover:bg-cyan-600 text-white font-display font-black uppercase px-12 py-5 text-2xl transition shadow-2xl shadow-cyan-500/40">
+      <span class="material-symbols-outlined" style="font-size:32px">chat</span> ¡SOLICITA TU CITA AHORA!
+    </a>
+    <p class="mt-6 text-sm text-ink-500">📞 314 703 0001 · 311 380 9602 · 323 590 5050</p>
+  </div>
+</section>
+<footer class="bg-ink-950 text-white pt-16 pb-8 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-4 gap-8 mb-12">
+      <div>
+        <img src="logo.png" alt="HYDROCELL" class="h-10 w-auto brightness-0 invert mb-4">
+        <p class="text-white/60 text-sm">Descarbonización premium de motores con tecnología de hidrógeno verde. Medellín · Bogotá.</p>
+      </div>
+      <div>
+        <h4 class="font-display font-bold mb-4 uppercase text-sm tracking-wider text-cyan-500">Servicios</h4>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li><a href="descarbonizacion.html" class="hover:text-cyan-500">Descarbonización</a></li>
+          <li><a href="limpieza-aceleracion.html" class="hover:text-cyan-500">Limpieza Aceleración</a></li>
+          <li><a href="analisis-gases.html" class="hover:text-cyan-500">Análisis de Gases</a></li>
+          <li><a href="desinfeccion.html" class="hover:text-cyan-500">Desinfección H3</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-bold mb-4 uppercase text-sm tracking-wider text-cyan-500">Sedes</h4>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li>Conquistadores, Medellín</li><li>Castilla, Medellín</li>
+          <li>Norte de Medellín</li><li>Bogotá, Galerías</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-bold mb-4 uppercase text-sm tracking-wider text-cyan-500">Contacto</h4>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li>📞 314 703 0001</li><li>📞 311 380 9602</li><li>📞 323 590 5050</li>
+        </ul>
+        <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="inline-flex items-center gap-2 mt-4 bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 text-sm font-display uppercase font-bold transition">
+          <span class="material-symbols-outlined text-base">chat</span> WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/10 text-center text-sm text-white/40">
+      © 2026 HYDROCELL S.A.S. — Descarbonización con hidrógeno verde. Medellín, Colombia.
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." aria-label="WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-500/90 rounded-full flex items-center justify-center shadow-xl shadow-green-500/40 transition hover:scale-110">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+</a>
+</body></html>

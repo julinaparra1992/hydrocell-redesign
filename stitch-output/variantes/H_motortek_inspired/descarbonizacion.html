@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Descarbonización · HYDROCELL</title>
+<meta name="description" content="Descarbonización de motor con hidrógeno HHO.">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        brand: '#00b9b5',
+        cyan: { 500: '#00b9b5', 600: '#3bb4c3', 50: '#e6f7f6' },
+        wapp: { DEFAULT: '#25d366', dark: '#1da851' },
+        green: { 500: '#4EBD8D', 50: '#edf9f3' },
+        ink: { 900: '#1f2937', 700: '#374151', 500: '#6b7280', 300: '#9ca3af' },
+      },
+      fontFamily: { sans: ['Montserrat', 'system-ui', 'sans-serif'] }
+    }
+  }
+}
+</script>
+<style>
+body { font-family: 'Montserrat', system-ui, sans-serif; color: #374151; }
+.material-symbols-outlined { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+.wa-btn { background: linear-gradient(135deg, #25d366 0%, #1da851 100%); box-shadow: 0 4px 16px rgba(37,211,102,0.35); transition: transform .15s ease, box-shadow .15s ease; }
+.wa-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,211,102,0.5); }
+.wa-pulse { animation: pulse 2s infinite; }
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0.5); }
+  50% { box-shadow: 0 0 0 20px rgba(37,211,102,0); }
+}
+</style>
+</head>
+<body class="bg-white">
+<div class="bg-cyan-500 text-white text-xs">
+  <div class="max-w-7xl mx-auto px-6 py-2.5 flex flex-wrap justify-between items-center gap-2">
+    <div class="flex items-center gap-5 font-medium">
+      <a href="tel:+573147030001" class="flex items-center gap-1.5 hover:underline"><span class="material-symbols-outlined text-base">phone</span>+57 314 703 0001</a>
+      <span class="hidden md:flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span>Lun-Sáb 8am-6pm</span>
+    </div>
+    <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="flex items-center gap-2 font-semibold hover:underline">
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+      Escríbenos por WhatsApp ahora
+    </a>
+  </div>
+</div>
+<header class="sticky top-0 z-50 bg-white shadow-md">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+    <a href="index.html" class="block"><img src="logo.png" alt="HYDROCELL" class="h-12 w-auto"></a>
+    <nav class="hidden md:flex gap-6 items-center text-sm font-semibold text-ink-700">
+      <a href="quienes-somos.html" class="hover:text-cyan-500 transition">Quiénes Somos</a>
+      <a href="descarbonizacion.html" class="hover:text-cyan-500 transition">Descarbonización</a>
+      <a href="analisis-gases.html" class="hover:text-cyan-500 transition">Análisis de Gases</a>
+      <a href="limpieza-aceleracion.html" class="hover:text-cyan-500 transition">Limpieza</a>
+      <a href="desinfeccion.html" class="hover:text-cyan-500 transition">Desinfección</a>
+      <a href="precios.html" class="hover:text-cyan-500 transition">Precios</a>
+    </nav>
+    <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="wa-btn flex items-center gap-2 text-white font-bold px-5 py-2.5 rounded-lg text-sm">
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+      Quiero Descarbonizar
+    </a>
+  </div>
+</header>
+<section class="relative bg-gradient-to-br from-cyan-50 via-white to-green-50 py-16 md:py-20 px-6 overflow-hidden">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="text-cyan-500 font-bold uppercase tracking-wider text-sm mb-4">★ Servicio Principal</p>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-ink-900 mb-6 leading-tight">Descarbonización de Motores con <span class="text-cyan-500">Tecnología de Hidrógeno</span></h1>
+      <p class="text-lg text-ink-700 mb-8 max-w-xl">Restaura potencia, ahorra combustible y cuida el medio ambiente. Servicio profesional con tecnología HHO.</p>
+      <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="wa-btn inline-flex items-center gap-3 text-white font-bold px-8 py-4 rounded-lg text-lg">
+  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+  Quiero Descarbonizar
+</a>
+    </div>
+    <div><img src="assets/hero-motor.png" alt="Descarbonización de Motores con" class="w-full rounded-2xl shadow-2xl"></div>
+  </div>
+</section>
+
+<section class="py-16 px-6 bg-white">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <img src="assets/scanner-diagnostico.png" alt="Generador HHO" class="w-full rounded-2xl shadow-xl">
+    </div>
+    <div>
+      <p class="text-cyan-500 font-bold uppercase tracking-wider text-sm mb-3">★ Cómo funciona</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-ink-900 mb-4">¿En qué consiste este servicio?</h2>
+      <p class="text-ink-700 leading-relaxed mb-4">La descarbonización del motor es un proceso que elimina los residuos de carbono acumulados en el interior del motor, mejorando su rendimiento, reduciendo el consumo de combustible y disminuyendo las emisiones contaminantes.</p>
+      <p class="text-ink-700 leading-relaxed mb-6">En Hydrocell utilizamos tecnología a base de hidrógeno, un método seguro, rápido y ecológico que no requiere desmontar el motor.</p>
+      <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="wa-btn inline-flex items-center gap-3 text-white font-bold px-8 py-4 rounded-lg text-lg">
+  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+  Quiero Descarbonizar
+</a>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 px-6 bg-gray-50">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-ink-900 text-center mb-10">¿Qué beneficios obtienes?</h2>
+    <div class="grid md:grid-cols-2 gap-x-12 gap-y-4 mb-10">
+      <div class="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm">
+        <span class="material-symbols-outlined text-green-500 mt-0.5">check_circle</span>
+        <span class="text-ink-700 text-sm">Nuestro sistema de descarbonización con hidrógeno remueve el carbón acumulado de manera eficiente y sin dañar el motor ni el medio ambiente.</span>
+      </div>
+      <div class="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm">
+        <span class="material-symbols-outlined text-green-500 mt-0.5">check_circle</span>
+        <span class="text-ink-700 text-sm">Disminuye las revoluciones del motor, incrementa el torque y mejora su funcionamiento.</span>
+      </div>
+      <div class="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm">
+        <span class="material-symbols-outlined text-green-500 mt-0.5">check_circle</span>
+        <span class="text-ink-700 text-sm">No contamina, no produce gases dañinos y no daña el vehículo, a diferencia de los métodos convencionales.</span>
+      </div>
+      <div class="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm">
+        <span class="material-symbols-outlined text-green-500 mt-0.5">check_circle</span>
+        <span class="text-ink-700 text-sm">Ahorra tiempo y dinero, e incrementa el potencial de sus negocios.</span>
+      </div>
+      <div class="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm">
+        <span class="material-symbols-outlined text-green-500 mt-0.5">check_circle</span>
+        <span class="text-ink-700 text-sm">Reduce emisiones, mejora la eficiencia y prolonga la vida útil del motor.</span>
+      </div>
+    </div>
+    <div class="text-center"><a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="wa-btn inline-flex items-center gap-3 text-white font-bold px-8 py-4 rounded-lg text-lg">
+  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+  Quiero Descarbonizar
+</a></div>
+  </div>
+</section>
+
+<section class="py-16 px-6 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-ink-900 text-center mb-3">Ideal para todo tipo de vehículos</h2>
+    <p class="text-center text-ink-500 mb-12">Trabajamos con cualquier marca y modelo</p>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+        <img src="assets/vehicle-sedan.png" alt="Vehículos particulares" class="w-full aspect-video object-cover">
+        <div class="p-6 text-center">
+          <h3 class="font-bold text-xl text-ink-900 mb-2">Vehículos Particulares</h3>
+          <p class="text-ink-500 text-sm">SUVs y utilitarios. Cualquier marca.</p>
+        </div>
+      </div>
+      <div class="bg-gray-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+        <img src="assets/vehicle-fleet.png" alt="Flotas" class="w-full aspect-video object-cover">
+        <div class="p-6 text-center">
+          <h3 class="font-bold text-xl text-ink-900 mb-2">Conductores que ahorran</h3>
+          <p class="text-ink-500 text-sm">Buscando ahorro real en combustible.</p>
+        </div>
+      </div>
+      <div class="bg-gray-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+        <img src="assets/vehicle-truck.png" alt="Empresas" class="w-full aspect-video object-cover">
+        <div class="p-6 text-center">
+          <h3 class="font-bold text-xl text-ink-900 mb-2">Empresas</h3>
+          <p class="text-ink-500 text-sm">Preocupadas por emisiones y flotas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 px-6 bg-cyan-500 text-white">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-3">¿Por Qué Elegirnos?</h2>
+    <p class="text-center opacity-90 mb-12">6 razones para confiar tu motor a Hydrocell</p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+        <div class="text-4xl mb-3">👨‍🔧</div>
+        <p class="text-white/95 text-sm">Técnicos especializados que tratan tu motor con el máximo cuidado, como si fuera propio.</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+        <div class="text-4xl mb-3">⚙️</div>
+        <p class="text-white/95 text-sm">Tecnología de última generación con equipos de hidrógeno (HHO) y descarbonizadores naturales, garantizando un proceso 100% seguro, limpio y sin desmontajes.</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+        <div class="text-4xl mb-3">🔍</div>
+        <p class="text-white/95 text-sm">Resultados comprobados desde la primera sesión: más potencia, mayor torque, menor consumo, ahorro de combustible, más silencioso y reducción en las emisiones dañinas para el medio ambiente.</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+        <div class="text-4xl mb-3">💬</div>
+        <p class="text-white/95 text-sm">Atención cercana y asesoría honesta, explicándote cada paso con claridad, sin tecnicismos ni letras pequeñas.</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+        <div class="text-4xl mb-3">⌛</div>
+        <p class="text-white/95 text-sm">Servicio rapido agendado de 30 a 40 minutos y te queda tu carro como nuevo.</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+        <div class="text-4xl mb-3">📊</div>
+        <p class="text-white/95 text-sm">Analisis de gases, escaneo y diagnóstico totalmente gratis con el servicio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 px-6 bg-white">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-ink-900 text-center mb-3">Tabla Comparativa de Emisiones</h2>
+    <p class="text-center text-ink-500 mb-10">Resultados reales medidos antes y después del servicio</p>
+    <div class="overflow-x-auto rounded-xl shadow-lg">
+      <table class="w-full">
+        <thead class="bg-ink-900 text-white">
+          <tr>
+            <th class="p-4 text-left text-sm uppercase tracking-wider">Item</th>
+            <th class="p-4 text-center text-sm uppercase tracking-wider">Antes</th>
+            <th class="p-4 text-center text-sm uppercase tracking-wider">10 min</th>
+            <th class="p-4 text-center text-sm uppercase tracking-wider">20 min</th>
+            <th class="p-4 text-center text-sm uppercase tracking-wider">Después</th>
+            <th class="p-4 text-center text-sm uppercase tracking-wider">Reducción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-200"><td class="p-4 font-bold text-ink-900">CO (%)</td><td class="text-center p-4">0.66</td><td class="text-center p-4">0.37</td><td class="text-center p-4">0.38</td><td class="text-center p-4">0.17</td><td class="text-center p-4 text-3xl font-extrabold text-cyan-500">74%</td></tr>
+          <tr class="border-b border-gray-200 bg-gray-50"><td class="p-4 font-bold text-ink-900">HC (ppm)</td><td class="text-center p-4">414</td><td class="text-center p-4">417</td><td class="text-center p-4">145</td><td class="text-center p-4">99</td><td class="text-center p-4 text-3xl font-extrabold text-cyan-500">76%</td></tr>
+          <tr class="border-b border-gray-200"><td class="p-4 font-bold text-ink-900">CO₂ (%)</td><td class="text-center p-4">14.1</td><td class="text-center p-4">14</td><td class="text-center p-4">11.8</td><td class="text-center p-4">14.5</td><td class="text-center p-4 text-lg text-ink-500">-3%</td></tr>
+          <tr class="border-b border-gray-200 bg-gray-50"><td class="p-4 font-bold text-ink-900">O₂ (%)</td><td class="text-center p-4">1.34</td><td class="text-center p-4">1.53</td><td class="text-center p-4">4.16</td><td class="text-center p-4">1</td><td class="text-center p-4 text-3xl font-extrabold text-green-500">25%</td></tr>
+          <tr><td class="p-4 font-bold text-ink-900">NOₓ (ppm)</td><td class="text-center p-4">73</td><td class="text-center p-4">89</td><td class="text-center p-4">71</td><td class="text-center p-4">18</td><td class="text-center p-4 text-3xl font-extrabold text-cyan-500">75%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section class="py-20 px-6 bg-gradient-to-br from-cyan-500 to-green-500 text-white">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl md:text-5xl font-extrabold mb-6">Agenda tu servicio hoy mismo</h2>
+    <p class="text-xl mb-10 max-w-2xl mx-auto opacity-95">No esperes a que tu carro te falle. Dale el cuidado que merece.</p>
+    <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="bg-white hover:bg-cyan-50 text-cyan-500 font-extrabold px-10 py-5 rounded-lg text-xl inline-flex items-center gap-3 shadow-2xl transition">
+      <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+      Contáctanos por WhatsApp
+    </a>
+    <p class="mt-6 text-sm opacity-90">📞 314 703 0001 · 311 380 9602 · 323 590 5050</p>
+  </div>
+</section>
+<footer class="bg-ink-900 text-white pt-12 pb-6 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-8 mb-10">
+      <div>
+        <img src="logo.png" alt="HYDROCELL" class="h-10 w-auto brightness-0 invert mb-4">
+        <p class="text-white/70 text-sm leading-relaxed">Empresa antioqueña pionera en descarbonización de motores con hidrógeno verde. 100% colombiano, certificación europea.</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 text-cyan-500">Servicios</h4>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li><a href="descarbonizacion.html" class="hover:text-cyan-500">Descarbonización de Motores</a></li>
+          <li><a href="limpieza-aceleracion.html" class="hover:text-cyan-500">Limpieza Cuerpo de Aceleración</a></li>
+          <li><a href="analisis-gases.html" class="hover:text-cyan-500">Análisis de Gases (HC)</a></li>
+          <li><a href="desinfeccion.html" class="hover:text-cyan-500">Desinfección Interna H3</a></li>
+          <li><a href="precios.html" class="hover:text-cyan-500">Precios</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 text-cyan-500">Contacto</h4>
+        <ul class="space-y-3 text-sm text-white/70">
+          <li class="flex items-start gap-2"><span class="material-symbols-outlined text-cyan-500 text-base">phone</span><span>314 703 0001 · 311 380 9602 · 323 590 5050</span></li>
+          <li class="flex items-start gap-2"><span class="material-symbols-outlined text-cyan-500 text-base">schedule</span>Lunes a Sábado · 8am - 6pm</li>
+          <li class="flex items-start gap-2"><span class="material-symbols-outlined text-cyan-500 text-base">location_on</span>4 sedes: Medellín y Bogotá</li>
+        </ul>
+        <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="wa-btn mt-5 inline-flex items-center gap-2 text-white font-bold px-5 py-3 rounded-lg text-sm">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+          Envía Mensaje
+        </a>
+      </div>
+    </div>
+    <div class="pt-6 border-t border-white/10 flex flex-wrap justify-between items-center gap-4 text-sm text-white/50">
+      <p>© 2026 HYDROCELL S.A.S. — Descarbonización con hidrógeno verde.</p>
+      <p>Medellín, Colombia 🇨🇴</p>
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." aria-label="WhatsApp" class="wa-btn wa-pulse fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full flex items-center justify-center text-white">
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+</a>
+</body></html>

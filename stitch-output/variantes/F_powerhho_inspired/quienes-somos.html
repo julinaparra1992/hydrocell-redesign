@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiénes Somos · HYDROCELL</title>
+<meta name="description" content="HYDROCELL S.A.S, empresa antioqueña pionera desde 2013.">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        cyan: { 500: '#00b9b5', 600: '#3bb4c3', 50: '#e6f7f6', 100: '#cdefee' },
+        green: { 500: '#4EBD8D', 50: '#edf9f3' },
+        ink: { 900: '#0e2f3e', 700: '#1a4a5e', 500: '#5a7785', 300: '#94a3b8' },
+      },
+      fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+    }
+  }
+}
+</script>
+<style>
+body { font-family: 'Inter', system-ui, sans-serif; color: #0e2f3e; }
+.material-symbols-outlined { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+.gradient-text { background: linear-gradient(135deg, #00b9b5 0%, #4EBD8D 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+</style>
+</head>
+<body class="bg-white">
+<div class="bg-ink-900 text-white text-xs">
+  <div class="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
+    <div class="flex items-center gap-6 text-white/80">
+      <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">phone</span>314 703 0001</span>
+      <span class="hidden md:flex items-center gap-1.5"><span class="material-symbols-outlined text-base">location_on</span>4 sedes · Medellín & Bogotá</span>
+    </div>
+    <div class="flex items-center gap-4 text-white/60">
+      <span>HYDROCELL S.A.S</span>
+    </div>
+  </div>
+</div>
+<header class="sticky top-0 z-50 bg-white border-b border-cyan-50 shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="block"><img src="logo.png" alt="HYDROCELL" class="h-12 w-auto"></a>
+    <nav class="hidden md:flex gap-6 items-center text-sm font-medium text-ink-900">
+      <a href="quienes-somos.html" class="text-cyan-500 font-semibold transition">Quiénes Somos</a>
+<a href="descarbonizacion.html" class="hover:text-cyan-500 transition">Descarbonización</a>
+<a href="analisis-gases.html" class="hover:text-cyan-500 transition">Análisis de Gases</a>
+<a href="limpieza-aceleracion.html" class="hover:text-cyan-500 transition">Limpieza</a>
+<a href="desinfeccion.html" class="hover:text-cyan-500 transition">Desinfección</a>
+<a href="precios.html" class="hover:text-cyan-500 transition">Precios</a>
+    </nav>
+    <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-5 py-2.5 rounded-full text-sm transition">
+      <span class="material-symbols-outlined text-base">chat</span> WhatsApp
+    </a>
+  </div>
+</header>
+<section class="relative py-20 md:py-24 px-6 overflow-hidden bg-gradient-to-br from-cyan-50/50 via-white to-green-50/30">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center relative z-10">
+    <div class="lg:col-span-7">
+      <p class="inline-flex items-center gap-2 bg-cyan-50 text-cyan-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+        <span class="material-symbols-outlined text-base">spark</span> Empresa antioqueña · Desde 2013
+      </p>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-ink-900 mb-6 leading-tight">
+        En HYDROCELL S.A.S. descarbonizando tu motor ayudamos al<br><span class="gradient-text">planeta y a tu bolsillo</span>
+      </h1>
+      <p class="text-lg md:text-xl text-ink-700 max-w-2xl mb-8">Pioneros en Colombia en soluciones de energía renovable y protección ambiental con tecnología de hidrógeno verde.</p>
+      <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg shadow-cyan-500/30 transition">
+        <span class="material-symbols-outlined">chat</span> ¡Contáctanos!
+      </a>
+    </div>
+    <div class="lg:col-span-5">
+      <img src="assets/quienes-somos-center.jpg" alt="En HYDROCELL S.A.S. descarbonizando tu motor ayudamos al" class="w-full rounded-3xl shadow-2xl object-cover aspect-square">
+    </div>
+  </div>
+  <div class="absolute -right-32 -bottom-32 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+  <div class="absolute -left-32 -top-32 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"></div>
+</section>
+
+<!-- ¿QUIÉNES SOMOS? -->
+<section class="py-20 px-6 bg-white">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="text-sm font-semibold text-cyan-500 uppercase tracking-widest mb-3">Nuestra empresa</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-ink-900 mb-6">¿Quiénes somos?</h2>
+      <p class="text-ink-700 text-lg leading-relaxed mb-4">HYDROCELL S.A.S es una empresa antioqueña pionera en soluciones de energía renovable y protección ambiental. Nos especializamos en electromecánica y desarrollamos generadores de gas oxi-hidrógeno (HHO) a partir de agua dulce, un combustible limpio que reemplaza los fósiles en la industria automotriz, calderas y soldaduras.</p>
+      <p class="text-ink-700 text-lg leading-relaxed">También fabricamos equipos para limpiar depósitos de carbón en motores, reduciendo consumo y emisiones. Ante los altos precios y la baja calidad de los combustibles, ofrecemos tecnologías limpias y no contaminantes que brindan energía alterna y sostenible para diversos sectores.</p>
+    </div>
+    <div><img src="assets/equipo-quienes-somos.jpg" alt="Equipo Hydrocell" class="w-full rounded-2xl shadow-xl"></div>
+  </div>
+</section>
+
+<!-- NUESTRA HISTORIA -->
+<section class="py-20 px-6 bg-cyan-50/30">
+  <div class="max-w-4xl mx-auto">
+    <p class="text-sm font-semibold text-cyan-500 uppercase tracking-widest mb-3 text-center">Cómo empezó todo</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-ink-900 mb-12 text-center">Nuestra Historia</h2>
+    <div class="space-y-6 text-ink-700 text-lg leading-relaxed">
+      <p>Todo comenzó con una inquietud personal. Cuando Luis Eduardo HIguita, fundador de Hydrocell, buscaba optimizar su motocicleta y descubrió un vacío en tecnologías limpias en Colombia.</p>
+      <p>Así nació Hydrocell, con la visión de diseñar soluciones que mejoren motores de combustión y promuevan la salud humana.</p>
+      <p>Hoy, somos una empresa 100% colombiana que desarrolla tecnología basada en hidrógeno verde: sistemas para descarbonizar motores y dispositivos antioxidantes que mejoran el bienestar.</p>
+      <p class="text-xl italic font-medium text-cyan-500 pt-4 border-l-4 border-cyan-500 pl-6">Creemos en el poder de la ciencia para transformar el mundo, cuidar el planeta y elevar la calidad de vida. Porque donde otros ven una molécula, nosotros vemos futuro.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MISIÓN Y VISIÓN -->
+<section class="py-20 px-6 bg-white">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
+    <div class="bg-gradient-to-br from-cyan-50 to-white p-10 rounded-3xl border border-cyan-100">
+      <div class="w-16 h-16 bg-cyan-500/20 rounded-full flex items-center justify-center mb-6 text-cyan-500"><span class="material-symbols-outlined" style="font-size:32px">flag</span></div>
+      <h3 class="text-2xl font-bold text-ink-900 mb-4">Misión</h3>
+      <p class="text-ink-700 leading-relaxed">HYDROCELL S.A.S tiene como misión, como filosofía el desarrollo y promoción del uso de fuentes de energía sostenible para así, crear un ambiente de vida más limpio para la humanidad, mediante dispositivos generadores de hidrógeno y el mantenimiento de los motores de combustión interna, lo que permite un ahorro significativo de combustibles fósiles y permite un mejor desempeño mecánico, más eficiencia de los motores, lo que se traduce en un beneficio para el medio ambiente.</p>
+    </div>
+    <div class="bg-gradient-to-br from-green-50 to-white p-10 rounded-3xl border border-green-500/20">
+      <div class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mb-6 text-green-500"><span class="material-symbols-outlined" style="font-size:32px">visibility</span></div>
+      <h3 class="text-2xl font-bold text-ink-900 mb-4">Visión</h3>
+      <p class="text-ink-700 leading-relaxed">En HYDROCELL S.A.S trabajamos con certificados de países de la Comunidad Económica Europea y patentes norteamericanas. Hemos lanzado nuestros productos a nivel nacional y operamos en el emergente mercado colombiano, con el objetivo de liderar en servicios, distribución y construcción de equipos generadores de hidrógeno de alta calidad y tecnología avanzada. Buscamos reconocimiento nacional e internacional por nuestra eficiencia en el uso de combustibles limpios, ofreciendo asesoría permanente y servicios de excelencia para garantizar la efectividad de nuestros productos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VALORES -->
+<section class="py-20 px-6 bg-ink-900 text-white">
+  <div class="max-w-6xl mx-auto">
+    <p class="text-sm font-semibold text-cyan-500 uppercase tracking-widest mb-3 text-center">Lo que nos define</p>
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Valores y Principios</h2>
+    <div class="grid md:grid-cols-5 gap-4">
+      <div class="bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 text-center">
+        <div class="text-3xl mb-3">🤝</div>
+        <h4 class="font-bold mb-2 uppercase text-sm tracking-wider">Respeto</h4>
+        <p class="text-white/70 text-xs">Reflejado en la atención y trato hacia clientes, empleados y toda persona que interactúe con nosotros.</p>
+      </div>
+      <div class="bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 text-center">
+        <div class="text-3xl mb-3">🛡️</div>
+        <h4 class="font-bold mb-2 uppercase text-sm tracking-wider">Honestidad</h4>
+        <p class="text-white/70 text-xs">Presente en cada una de nuestras acciones y procesos internos y externos.</p>
+      </div>
+      <div class="bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 text-center">
+        <div class="text-3xl mb-3">⭐</div>
+        <h4 class="font-bold mb-2 uppercase text-sm tracking-wider">Excelencia</h4>
+        <p class="text-white/70 text-xs">Nos comprometemos a hacer las cosas bien, con calidad y siempre pensando en el cliente.</p>
+      </div>
+      <div class="bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 text-center">
+        <div class="text-3xl mb-3">📋</div>
+        <h4 class="font-bold mb-2 uppercase text-sm tracking-wider">Responsabilidad</h4>
+        <p class="text-white/70 text-xs">Asumimos nuestros deberes con compromiso individual y colectivo.</p>
+      </div>
+      <div class="bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 text-center">
+        <div class="text-3xl mb-3">⚖️</div>
+        <h4 class="font-bold mb-2 uppercase text-sm tracking-wider">Legalidad</h4>
+        <p class="text-white/70 text-xs">Cumplimos con todos los requisitos y normas legales vigentes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-24 px-6 relative overflow-hidden">
+  <img src="assets/cta-final-motor.png" alt="" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/95 via-cyan-500/85 to-green-500/85"></div>
+  <div class="max-w-4xl mx-auto text-center relative z-10 text-white">
+    <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">¡Lleva tu taller a la era del hidrógeno!</h2>
+    <p class="text-white/90 text-lg mb-10 max-w-2xl mx-auto">Únete a la red de talleres aliados de Hydrocell.</p>
+    <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="inline-flex items-center gap-2 bg-white hover:bg-cyan-50 text-cyan-500 font-bold px-10 py-5 rounded-full text-lg shadow-2xl transition">
+      <span class="material-symbols-outlined">chat</span> ¡Contáctanos!
+    </a>
+  </div>
+</section>
+<footer class="bg-ink-900 text-white pt-16 pb-8 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-4 gap-8 mb-12">
+      <div>
+        <img src="logo.png" alt="HYDROCELL" class="h-10 w-auto brightness-0 invert mb-4">
+        <p class="text-white/60 text-sm">Descarbonización premium de motores con tecnología de hidrógeno verde.</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 uppercase text-sm tracking-wider">Servicios</h4>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li><a href="descarbonizacion.html" class="hover:text-cyan-500">Descarbonización</a></li>
+          <li><a href="limpieza-aceleracion.html" class="hover:text-cyan-500">Limpieza Aceleración</a></li>
+          <li><a href="analisis-gases.html" class="hover:text-cyan-500">Análisis de Gases</a></li>
+          <li><a href="desinfeccion.html" class="hover:text-cyan-500">Desinfección H3</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 uppercase text-sm tracking-wider">Sedes</h4>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li>Conquistadores, Medellín</li>
+          <li>Castilla, Medellín</li>
+          <li>Norte de Medellín</li>
+          <li>Bogotá, Galerías</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 uppercase text-sm tracking-wider">Contacto</h4>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li>📞 314 703 0001</li>
+          <li>📞 311 380 9602</li>
+          <li>📞 323 590 5050</li>
+        </ul>
+        <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="inline-flex items-center gap-2 mt-4 bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-full text-sm transition">
+          <span class="material-symbols-outlined text-base">chat</span> WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/10 text-center text-sm text-white/40">
+      © 2026 HYDROCELL S.A.S. — Descarbonización con hidrógeno verde. Medellín, Colombia.
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." aria-label="WhatsApp"
+   class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-500/90 rounded-full flex items-center justify-center shadow-xl shadow-green-500/40 transition hover:scale-110">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+</a>
+</body></html>

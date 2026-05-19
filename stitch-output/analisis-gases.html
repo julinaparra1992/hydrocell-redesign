@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Análisis de Gases (HC) | HYDROCELL S.A.S.</title>
+<meta name="description" content="Análisis de gases HC para vehículos a gasolina. Detecta fallas, reduce emisiones y cumple normativas ambientales en minutos."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Oswald:wght@600;700&amp;family=Raleway:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: '#00b9b5',
+        secondary: '#4EBD8D',
+        tertiary: '#3bb4c3',
+        surface: '#0A0F12',
+        'surface-variant': '#1A2025',
+        'on-surface': '#F8FAFC',
+        'on-surface-variant': '#94A3B8',
+        light: '#F4F8F9',
+        dark: '#111418',
+      },
+      fontFamily: {
+        headline: ['Oswald', 'sans-serif'],
+        display: ['Oswald', 'sans-serif'],
+        body: ['Open Sans', 'sans-serif'],
+        label: ['Raleway', 'sans-serif'],
+      },
+      boxShadow: { 'glow': '0 0 24px rgba(0, 185, 181, 0.4)' },
+      borderRadius: { DEFAULT: "0.5rem", lg: "0.75rem", xl: "1.5rem", full: "9999px" }
+    }
+  }
+}
+</script>
+<style>
+body { background-color: #0A0F12; color: #F8FAFC; }
+.text-glow { text-shadow: 0 0 16px rgba(0, 185, 181, 0.6); }
+.pulse-animation { animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 185, 181, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(0, 185, 181, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 185, 181, 0); }
+}
+</style>
+</head>
+<body class="font-body antialiased overflow-x-hidden selection:bg-primary selection:text-white">
+<!-- NAV STICKY -->
+<header class="bg-surface/80 backdrop-blur-md sticky top-0 z-50 border-b border-white/10 w-full transition-all duration-300" id="navbar">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+<a class="flex items-center gap-2" href="index.html">
+<img alt="HYDROCELL Logo" class="h-10 w-auto" src="assets/logo.png"/>
+</a>
+<nav class="hidden md:flex gap-6 items-center font-label tracking-wider uppercase text-xs">
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="quienes-somos.html">Quiénes Somos</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="descarbonizacion.html">Descarbonización</a>
+<a class="text-primary transition-all duration-300" href="analisis-gases.html">Análisis de Gases</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="limpieza-aceleracion.html">Limpieza Aceleración</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="desinfeccion.html">Desinfección</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="precios.html">Precios</a>
+
+</nav>
+<a class="hidden md:flex items-center gap-2 bg-primary text-surface font-label font-bold py-2 px-4 rounded-lg shadow-glow hover:bg-tertiary hover:scale-95 transition-all duration-300 text-sm" href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20recibir%20información%20sobre%20los%20servicios%20Hydrocell.">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+WhatsApp
+</a>
+<button class="md:hidden text-primary"><span class="material-symbols-outlined text-3xl">menu</span></button>
+</div>
+</header>
+<!-- HERO -->
+<section class="relative min-h-[80vh] flex items-center overflow-hidden pt-10">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/70 to-surface/20 z-10"></div>
+<img alt="Análisis de Gases (HC): Mide la Salud de tu Motor" class="w-full h-full object-cover" src="assets/analisis-gases-hero.png"/>
+</div>
+<div class="relative z-20 max-w-7xl mx-auto px-6 w-full">
+<div class="max-w-3xl space-y-6">
+<p class="font-label tracking-[0.3em] text-primary text-sm font-semibold uppercase">Diagnóstico Profesional</p>
+<h1 class="font-display font-bold text-5xl md:text-7xl uppercase text-on-surface leading-tight">Análisis de Gases (HC): Mide la Salud de tu Motor</h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl">Detecta fallas, reduce emisiones y cumple normativas ambientales en minutos.</p>
+<a class="inline-flex items-center gap-2 bg-primary text-surface font-label font-bold py-3 px-8 rounded-lg shadow-glow hover:bg-tertiary hover:scale-95 transition-all duration-300 text-base uppercase tracking-wider" href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20recibir%20información%20sobre%20los%20servicios%20Hydrocell.">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>¡Agenda tu diagnóstico ahora!
+</a>
+</div>
+</div>
+</section>
+
+<!-- ¿QUÉ ES? -->
+<section class="py-20 px-6">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<h2 class="font-display font-bold text-4xl md:text-5xl uppercase text-on-surface">¿Qué es?</h2>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed">El análisis de gases HC (hidrocarburos) en vehículos se refiere a la medición de la cantidad de hidrocarburos no quemados presentes en los gases de escape. Estos hidrocarburos son restos de combustible que no se han consumido durante la combustión y pueden indicar problemas en el motor, como una combustión incompleta, fallas en el sistema de encendido o desgaste del motor.</p>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed">Un exceso de HC en los gases de escape puede causar contaminación ambiental y afectar el rendimiento del vehículo.</p>
+</div>
+<div><img class="rounded-xl w-full shadow-2xl border border-primary/20" src="assets/analisis-gases-hero.png" alt="Análisis de gases HC"/></div>
+</div>
+</section>
+
+<!-- BENEFICIOS -->
+<section class="py-20 px-6 bg-surface-variant/30">
+<div class="max-w-6xl mx-auto">
+<h2 class="font-display font-bold text-4xl md:text-5xl uppercase text-on-surface text-center mb-12">Beneficios del análisis de gases</h2>
+<div class="grid md:grid-cols-2 gap-4">
+<div class="bg-surface border border-secondary/30 rounded-xl p-5 flex gap-4"><span class="material-symbols-outlined text-secondary text-3xl">check_circle</span><p class="font-body text-on-surface">Detecta fallas mecánicas o de combustión no visibles.</p></div>
+<div class="bg-surface border border-secondary/30 rounded-xl p-5 flex gap-4"><span class="material-symbols-outlined text-secondary text-3xl">check_circle</span><p class="font-body text-on-surface">Te ayuda a aprobar la revisión técnico-mecánica sin contratiempos.</p></div>
+<div class="bg-surface border border-secondary/30 rounded-xl p-5 flex gap-4"><span class="material-symbols-outlined text-secondary text-3xl">check_circle</span><p class="font-body text-on-surface">Reduce la contaminación ambiental optimizando la combustión.</p></div>
+<div class="bg-surface border border-secondary/30 rounded-xl p-5 flex gap-4"><span class="material-symbols-outlined text-secondary text-3xl">check_circle</span><p class="font-body text-on-surface">Mejora el consumo de combustible y ahorra dinero.</p></div>
+<div class="bg-surface border border-secondary/30 rounded-xl p-5 flex gap-4"><span class="material-symbols-outlined text-secondary text-3xl">check_circle</span><p class="font-body text-on-surface">Prolonga la vida útil del motor.</p></div>
+<div class="bg-surface border border-secondary/30 rounded-xl p-5 flex gap-4"><span class="material-symbols-outlined text-secondary text-3xl">check_circle</span><p class="font-body text-on-surface">Incluye un informe claro para tomar decisiones de mantenimiento.</p></div>
+</div>
+</div>
+</section>
+
+<!-- SERVICIOS INCLUIDOS -->
+<section class="py-20 px-6">
+<div class="max-w-6xl mx-auto">
+<h2 class="font-display font-bold text-4xl md:text-5xl uppercase text-on-surface text-center mb-12">Servicios incluidos</h2>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="bg-surface-variant border border-primary/20 rounded-xl p-8 space-y-3"><div class="text-5xl">🔍</div><h3 class="font-display font-bold text-2xl uppercase text-on-surface">Diagnóstico computarizado</h3><p class="font-body text-on-surface-variant">Analizamos el estado general del motor con tecnología avanzada. Detectamos fallas, códigos de error y datos en tiempo real para un enfoque preciso.</p></div>
+<div class="bg-surface-variant border border-primary/20 rounded-xl p-8 space-y-3"><div class="text-5xl">🌫️</div><h3 class="font-display font-bold text-2xl uppercase text-on-surface">Análisis de gases contaminantes</h3><p class="font-body text-on-surface-variant">Medimos las emisiones directamente desde el escape con equipos profesionales. Te mostramos el nivel de contaminación antes y después del servicio.</p></div>
+<div class="bg-surface-variant border border-primary/20 rounded-xl p-8 space-y-3"><div class="text-5xl">💨</div><h3 class="font-display font-bold text-2xl uppercase text-on-surface">Descarbonización interna del motor</h3><p class="font-body text-on-surface-variant">Eliminamos los residuos de carbono acumulados sin necesidad de desmontar el motor. Mejora inmediata en rendimiento, eficiencia y emisiones.</p></div>
+<div class="bg-surface-variant border border-primary/20 rounded-xl p-8 space-y-3"><div class="text-5xl">📋</div><h3 class="font-display font-bold text-2xl uppercase text-on-surface">Informe técnico personalizado</h3><p class="font-body text-on-surface-variant">Te entregamos un reporte completo con los resultados del análisis, incluyendo imágenes, lecturas y observaciones para que veas el cambio con tus propios ojos.</p></div>
+</div>
+</div>
+</section>
+<!-- CTA FINAL -->
+<section class="relative py-24 px-6 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-surface via-surface-variant to-surface z-0"></div>
+<div class="absolute inset-0 z-0" style="background: radial-gradient(circle at 50% 50%, rgba(0,185,181,0.15) 0%, transparent 70%);"></div>
+<div class="relative z-10 max-w-4xl mx-auto text-center space-y-8">
+<h2 class="font-display font-bold text-4xl md:text-6xl uppercase text-on-surface leading-tight">¿Quieres optimizar tu motor y pasar la prueba de gases?</h2>
+<p class="font-body text-lg text-on-surface-variant">Agenda hoy mismo y recibe diagnóstico + informe técnico incluidos.</p>
+<a class="inline-flex items-center gap-2 bg-primary text-surface font-label font-bold py-4 px-10 rounded-lg shadow-glow hover:bg-tertiary hover:scale-95 transition-all duration-300 text-lg uppercase tracking-wider" href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20recibir%20información%20sobre%20los%20servicios%20Hydrocell.">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>¡Solicitar mi cita ahora!
+</a>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="bg-surface dark:bg-[#0A0F12] border-t border-white/10 w-full py-12 px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div class="space-y-4">
+<a class="inline-block" href="index.html"><img alt="HYDROCELL Logo" class="h-12 w-auto" src="assets/logo.png"/></a>
+<p class="font-body text-sm text-on-surface-variant mt-4">Descarbonización premium de motores con tecnología de hidrógeno verde. Medellín · Bogotá.</p>
+</div>
+<div>
+<h4 class="font-display font-bold text-lg text-on-surface uppercase mb-4 tracking-wider">Servicios</h4>
+<ul class="space-y-3 font-body text-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="descarbonizacion.html">Descarbonización</a></li>
+<li><a class="hover:text-primary transition-colors" href="limpieza-aceleracion.html">Limpieza Aceleración</a></li>
+<li><a class="hover:text-primary transition-colors" href="analisis-gases.html">Análisis de Gases</a></li>
+<li><a class="hover:text-primary transition-colors" href="desinfeccion.html">Desinfección H3</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-display font-bold text-lg text-on-surface uppercase mb-4 tracking-wider">Sedes</h4>
+<ul class="space-y-3 font-body text-sm text-on-surface-variant">
+<li>Conquistadores, Medellín</li>
+<li>Castilla, Medellín</li>
+<li>Norte de Medellín</li>
+<li>Bogotá, Galerías</li>
+</ul>
+</div>
+<div>
+<h4 class="font-display font-bold text-lg text-on-surface uppercase mb-4 tracking-wider">Contacto</h4>
+<ul class="space-y-3 font-body text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">phone</span>314 703 0001</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">phone</span>311 380 9602</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">phone</span>323 590 5050</li>
+<li class="pt-2"><a class="inline-flex items-center gap-2 bg-primary text-surface px-4 py-2 rounded-lg font-bold text-sm hover:bg-tertiary transition" href="https://wa.me/573147030001"><span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">chat</span>WhatsApp</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body text-sm text-on-surface-variant text-center md:text-left">© 2026 HYDROCELL S.A.S. — Descarbonización de Motores con Hidrógeno Verde. Medellín, Colombia.</p>
+<div class="font-body text-xs text-on-surface-variant/50 space-x-4">
+<a class="hover:text-primary transition-colors" href="#">Términos y Condiciones</a>
+<a class="hover:text-primary transition-colors" href="#">Política de Privacidad</a>
+</div>
+</div>
+</footer>
+<!-- Floating WhatsApp -->
+<a aria-label="Contactar por WhatsApp" class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-primary rounded-full flex items-center justify-center text-surface shadow-glow hover:bg-tertiary transition-colors pulse-animation" href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20recibir%20información%20sobre%20los%20servicios%20Hydrocell.">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+</a>
+</body></html>

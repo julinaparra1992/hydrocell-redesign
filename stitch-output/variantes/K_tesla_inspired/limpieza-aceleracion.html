@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Limpieza Cuerpo Aceleración · Hydrocell</title>
+<meta name="description" content="Limpieza profesional del cuerpo de aceleración.">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        accent: '#00b9b5', secondary: '#4EBD8D',
+        carbon: '#171A20', graphite: '#393C41', pewter: '#5C5E62',
+        fog: '#8E8E8E', ash: '#F4F4F4', cloud: '#EEEEEE', silver: '#D0D1D2',
+      },
+      fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+      borderRadius: { DEFAULT: '4px', sm: '4px', md: '4px', lg: '4px', xl: '12px' }
+    }
+  }
+}
+</script>
+<style>
+body { font-family: 'Inter', system-ui, sans-serif; color: #393C41; background: #fff; -webkit-font-smoothing: antialiased; }
+* { transition: color 0.33s, background-color 0.33s, border-color 0.33s; }
+.material-symbols-outlined { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+.tracking-tesla { letter-spacing: 0.3em; }
+.frosted-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+</style>
+</head>
+<body class="bg-white">
+<header class="fixed top-0 left-0 right-0 z-50 frosted-nav bg-white/85 border-b border-cloud/50">
+  <div class="max-w-screen-2xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="block"><span class="font-semibold tracking-tesla text-carbon text-sm">HYDROCELL</span></a>
+    <nav class="hidden md:flex gap-8 items-center text-sm font-medium text-carbon">
+      <a href="quienes-somos.html" class="hover:opacity-60">Quiénes Somos</a>
+      <a href="descarbonizacion.html" class="hover:opacity-60">Descarbonización</a>
+      <a href="analisis-gases.html" class="hover:opacity-60">Análisis</a>
+      <a href="limpieza-aceleracion.html" class="hover:opacity-60">Limpieza</a>
+      <a href="desinfeccion.html" class="hover:opacity-60">Desinfección</a>
+      <a href="precios.html" class="hover:opacity-60">Precios</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="hidden md:inline-flex items-center gap-1.5 text-xs text-pewter hover:text-carbon">
+        <span class="material-symbols-outlined text-base">phone</span> 314 703 0001
+      </a>
+    </div>
+  </div>
+</header>
+<section class="min-h-screen flex flex-col relative">
+  <div class="absolute inset-0">
+    <img src="assets/limpieza-aceleracion-hero.jpg" alt="" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/30"></div>
+  </div>
+  <div class="relative z-10 flex-1 flex flex-col justify-center items-center text-center pt-24 pb-12 px-6">
+    <h1 class="text-white text-4xl md:text-5xl font-medium mb-4">Limpieza del Cuerpo de Aceleración</h1>
+    <p class="text-white text-base md:text-lg font-normal opacity-90 max-w-2xl">Recupera la respuesta original del acelerador en minutos.</p>
+  </div>
+  <div class="relative z-10 pb-16 px-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
+    <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="bg-accent hover:opacity-90 text-white text-sm font-medium w-[260px] h-[40px] flex items-center justify-center rounded">AGENDA AHORA</a>
+    <a href="precios.html" class="bg-white/85 hover:bg-white text-graphite text-sm font-medium w-[260px] h-[40px] flex items-center justify-center rounded">VER PRECIOS</a>
+  </div>
+</section><section class="py-32 px-6 bg-white">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-carbon text-3xl md:text-4xl font-medium mb-8 text-center">¿Qué es y por qué hacerlo?</h2>
+    <p class="text-graphite text-base leading-relaxed mb-5">El cuerpo de aceleración regula el flujo de aire al motor. Con el tiempo, se ensucia con residuos de carbono y aceite, provocando aceleraciones lentas, inestabilidad en ralentí y fallos electrónicos. Su limpieza es esencial para mantener el motor en óptimas condiciones.</p>
+  </div>
+</section><section class="bg-white py-24 px-6">
+  <div class="max-w-5xl mx-auto">
+    <img src="assets/limpieza-aceleracion-detail.jpg" alt="" class="w-full">
+    
+  </div>
+</section>
+<section class="py-32 px-6 bg-ash">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-carbon text-3xl md:text-4xl font-medium mb-12 text-center">Beneficios</h2>
+    <div class="space-y-6">
+      <p class="text-graphite border-b border-cloud pb-6">Mejora la respuesta del pedal del acelerador.</p>
+      <p class="text-graphite border-b border-cloud pb-6">Estabiliza las revoluciones en ralentí.</p>
+      <p class="text-graphite border-b border-cloud pb-6">Reduce el consumo de combustible.</p>
+      <p class="text-graphite border-b border-cloud pb-6">Evita códigos de error y fallos de encendido.</p>
+      <p class="text-graphite border-b border-cloud pb-6">Optimiza el flujo de aire al motor.</p>
+    </div>
+  </div>
+</section>
+
+<section class="py-32 px-6 bg-white">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-carbon text-3xl md:text-4xl font-medium mb-12">¿Cada cuánto?</h2>
+    <div class="space-y-8">
+      <div>
+        <p class="text-carbon text-5xl font-medium mb-2">10.000 km</p>
+        <p class="text-pewter text-sm">Con cada cambio de aceite</p>
+      </div>
+      <div class="pt-8 border-t border-cloud">
+        <p class="text-carbon text-5xl font-medium mb-2">5.000 km</p>
+        <p class="text-pewter text-sm">Si usas aceite mineral</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="min-h-screen flex flex-col bg-ash pt-24">
+  <div class="flex-1 flex flex-col justify-center items-center text-center px-6">
+    <h2 class="text-carbon text-4xl md:text-5xl font-medium mb-4">Cuida el corazón de tu motor</h2>
+    <p class="text-pewter text-base max-w-2xl">Una limpieza a tiempo previene reparaciones costosas.</p>
+  </div>
+  <div class="pb-16 px-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
+    <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="bg-accent hover:opacity-90 text-white text-sm font-medium w-[260px] h-[40px] flex items-center justify-center rounded">SOLICITA CITA</a>
+  </div>
+</section>
+<footer class="py-12 px-6 bg-white border-t border-cloud">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-wrap justify-between items-center gap-6 text-xs text-pewter">
+      <div class="flex flex-wrap gap-6">
+        <a href="quienes-somos.html" class="hover:text-carbon">Quiénes Somos</a>
+        <a href="descarbonizacion.html" class="hover:text-carbon">Descarbonización</a>
+        <a href="precios.html" class="hover:text-carbon">Precios</a>
+        <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="hover:text-carbon">WhatsApp</a>
+      </div>
+      <p class="tracking-tesla">© 2026 HYDROCELL S.A.S. — Medellín, Colombia</p>
+    </div>
+  </div>
+</footer>
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-cloud">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between gap-4">
+    <div class="flex items-center gap-3 flex-1 max-w-md">
+      <span class="material-symbols-outlined text-pewter">chat</span>
+      <input type="text" placeholder="Pregúntanos sobre descarbonización..." class="flex-1 text-sm text-carbon placeholder-fog bg-transparent outline-none">
+    </div>
+    <a href="https://wa.me/573147030001?text=¡Hola!%20Me%20gustaría%20información%20sobre%20Hydrocell." class="hidden md:flex items-center gap-2 text-accent text-sm font-medium hover:opacity-80">
+      <span class="material-symbols-outlined text-base">event</span> Agendar Servicio Hoy
+    </a>
+  </div>
+</div>
+</body></html>
