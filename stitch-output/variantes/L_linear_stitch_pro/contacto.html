@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contacto | HYDROCELL</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Public+Sans:wght@400;500&amp;family=JetBrains+Mono&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        canvas: "#010102",
+                        surface: {
+                            1: "#0f1011",
+                            2: "#141516",
+                            3: "#18191a",
+                            4: "#191a1b",
+                        },
+                        hairline: "#23252a",
+                        "hairline-strong": "#34343a",
+                        ink: "#f7f8f8",
+                        "ink-muted": "#d0d6e0",
+                        "ink-subtle": "#8a8f98",
+                        "ink-tertiary": "#62666d",
+                        primary: "#00b9b5",
+                        "primary-hover": "#3bb4c3",
+                        "primary-focus": "#008f8b",
+                        "semantic-success": "#4EBD8D",
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    fontFamily: {
+                        headline: ["Inter", "sans-serif"],
+                        display: ["Inter", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        label: ["Public Sans", "sans-serif"],
+                        mono: ["JetBrains Mono", "monospace"],
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #010102;
+            color: #f7f8f8;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% -20%, rgba(0, 185, 181, 0.15) 0%, rgba(1, 1, 2, 0) 50%);
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none !important;
+            box-shadow: 0 0 0 2px rgba(0, 185, 181, 0.3) !important;
+            border-color: #00b9b5 !important;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#010102]/80 backdrop-blur-md border-b border-[#23252a]">
+<div class="flex justify-between items-center h-14 px-6 max-w-[1280px] mx-auto">
+<div class="text-headline-md font-bold tracking-tighter text-[#f7f8f8] flex items-center gap-2">
+<span class="text-[#00b9b5] material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">eco</span>
+                HYDROCELL
+            </div>
+<div class="hidden md:flex items-center gap-8 font-headline text-body-sm font-medium tracking-tight">
+<a class="text-[#8a8f98] hover:text-[#f7f8f8] transition-colors duration-200" href="#">Tecnología</a>
+<a class="text-[#8a8f98] hover:text-[#f7f8f8] transition-colors duration-200" href="#">Sedes</a>
+<a class="text-[#8a8f98] hover:text-[#f7f8f8] transition-colors duration-200" href="#">Resultados</a>
+<a class="text-[#8a8f98] hover:text-[#f7f8f8] transition-colors duration-200" href="#">Precios</a>
+<a class="text-[#8a8f98] hover:text-[#f7f8f8] transition-colors duration-200" href="#">Blog</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-4 py-1.5 rounded-lg bg-[#00b9b5] text-[#010102] font-semibold text-sm active:scale-95 transition-all hover:bg-[#3bb4c3]">
+                    Agendar
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-14 overflow-hidden">
+<!-- Hero Section -->
+<section class="relative pt-24 pb-16 px-6 hero-gradient">
+<div class="max-w-[1280px] mx-auto text-center">
+<div class="inline-block px-3 py-1 mb-6 border border-hairline rounded-full bg-surface-1">
+<span class="text-[13px] font-medium tracking-[0.4px] text-primary uppercase">Atención Personalizada</span>
+</div>
+<h1 class="text-[56px] md:text-[80px] font-semibold tracking-[-3.0px] leading-[1.1] mb-6 text-ink">
+                    Hablemos
+                </h1>
+<p class="max-w-2xl mx-auto text-lg md:text-xl text-ink-muted font-light leading-relaxed">
+                    Estamos listos para optimizar el rendimiento de tu motor y reducir tu impacto ambiental. Déjanos tus datos o visítanos en nuestras sedes.
+                </p>
+</div>
+</section>
+<!-- Main Content Grid -->
+<section class="max-w-[1280px] mx-auto px-6 py-12">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+<!-- Left Column: Form -->
+<div class="bg-surface-1 border border-hairline rounded-xl p-8 md:p-10">
+<h2 class="text-2xl font-semibold tracking-tight text-ink mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+                        Envíanos un mensaje
+                    </h2>
+<form class="space-y-6" id="contactForm">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-medium text-ink-subtle uppercase tracking-wider">Nombre completo</label>
+<input class="w-full bg-surface-2 border border-hairline rounded-lg px-4 py-3 text-ink placeholder:text-ink-tertiary transition-all" placeholder="Ej. Juan Pérez" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-medium text-ink-subtle uppercase tracking-wider">Email corporativo</label>
+<input class="w-full bg-surface-2 border border-hairline rounded-lg px-4 py-3 text-ink placeholder:text-ink-tertiary transition-all" placeholder="juan@empresa.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-medium text-ink-subtle uppercase tracking-wider">Tipo de Vehículo</label>
+<select class="w-full bg-surface-2 border border-hairline rounded-lg px-4 py-3 text-ink transition-all appearance-none">
+<option disabled="" selected="" value="">Selecciona una categoría</option>
+<option value="liviano">Vehículo Liviano (Carro/Moto)</option>
+<option value="carga">Transporte de Carga</option>
+<option value="pasajeros">Transporte de Pasajeros</option>
+<option value="maquinaria">Maquinaria Amarilla</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-medium text-ink-subtle uppercase tracking-wider">Mensaje</label>
+<textarea class="w-full bg-surface-2 border border-hairline rounded-lg px-4 py-3 text-ink placeholder:text-ink-tertiary transition-all resize-none" placeholder="¿En qué podemos ayudarte?" rows="4"></textarea>
+</div>
+<button class="w-full py-4 bg-primary text-canvas font-bold rounded-lg hover:bg-primary-hover active:scale-[0.98] transition-all flex justify-center items-center gap-2" type="submit">
+<span>Enviar mensaje</span>
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+</form>
+</div>
+<!-- Right Column: Info -->
+<div class="space-y-10 lg:pl-12">
+<div>
+<h2 class="text-2xl font-semibold tracking-tight text-ink mb-8">Información de contacto</h2>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-1 border border-hairline flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">call</span>
+</div>
+<div>
+<p class="text-xs font-medium text-ink-subtle uppercase tracking-wider mb-1">WhatsApp</p>
+<a class="text-lg text-ink font-medium hover:text-primary transition-colors" href="https://wa.me/573147030001">+57 314 703 0001</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-1 border border-hairline flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">alternate_email</span>
+</div>
+<div>
+<p class="text-xs font-medium text-ink-subtle uppercase tracking-wider mb-1">Email</p>
+<a class="text-lg text-ink font-medium hover:text-primary transition-colors" href="mailto:contacto@hydrocell.com.co">contacto@hydrocell.com.co</a>
+</div>
+</div>
+</div>
+</div>
+<div>
+<p class="text-xs font-medium text-ink-subtle uppercase tracking-wider mb-4">Nuestras Sedes</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 rounded-lg bg-surface-1 border border-hairline">
+<p class="text-ink font-semibold">Bogotá</p>
+<p class="text-ink-tertiary text-sm">Principal Norte</p>
+</div>
+<div class="p-4 rounded-lg bg-surface-1 border border-hairline">
+<p class="text-ink font-semibold">Medellín</p>
+<p class="text-ink-tertiary text-sm">3 Sedes operativas</p>
+</div>
+<div class="p-4 rounded-lg bg-surface-1 border border-hairline">
+<p class="text-ink font-semibold">Cali</p>
+<p class="text-ink-tertiary text-sm">Punto de servicio</p>
+</div>
+<div class="p-4 rounded-lg bg-surface-1 border border-hairline">
+<p class="text-ink font-semibold">Barranquilla</p>
+<p class="text-ink-tertiary text-sm">Sede Industrial</p>
+</div>
+</div>
+</div>
+<a class="group block p-6 bg-[#25D366]/10 border border-[#25D366]/20 rounded-xl hover:bg-[#25D366]/20 transition-all text-center" href="https://wa.me/573147030001">
+<div class="flex items-center justify-center gap-3">
+<svg class="w-8 h-8 text-[#25D366]" fill="currentColor" viewbox="0 0 24 24">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+</svg>
+<span class="text-xl font-bold text-ink tracking-tight">Contactar por WhatsApp</span>
+</div>
+<p class="mt-2 text-[#25D366] text-sm font-medium">Respuesta inmediata de nuestro equipo comercial</p>
+</a>
+</div>
+</div>
+</section>
+<!-- Map Section -->
+<section class="max-w-[1280px] mx-auto px-6 py-24">
+<div class="relative w-full aspect-[21/9] md:aspect-[3/1] bg-surface-1 border border-hairline rounded-2xl overflow-hidden group">
+<div class="absolute inset-0 bg-[#08090a]">
+<img alt="Mapa de sedes Hydrocell Colombia" class="w-full h-full object-cover opacity-60 transition-transform duration-1000 group-hover:scale-105" data-alt="A stylized dark mode digital map of Colombia with a minimalist aesthetic. The map features glowing cyan pins marking Bogota Medellin Cali and Barranquilla. The background is a deep charcoal black with subtle topographical lines in a slightly lighter grey. The lighting is atmospheric with a soft cyan glow emanating from the cities creating a high-tech corporate presence vibe." data-location="Colombia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNybNQv44t2z-spNJlXnpGBh_6-dVODsanSjHFjnSa8if6PzQjIqNdO_EDo6Yh9iRBdIki8SfjkakB0anFGGB7o0WiYmBBRK_sbrvSVKCqYMxpNMEeak_8_yD7tYA7j1tzJInIsuViXuIU9SIW1NWLKlAiOVDQGCEjtI0l68eN8FrsjmSO6VQzcEtL8HVC_urpclvEpfdX4oQpJbTXRKW9hHtenHkqnPGWjPkmaenwbZ0Mu4iWUMaV8nYRJsF-0jf9yvHHh6YwgsY"/>
+</div>
+<!-- Floating Card over map -->
+<div class="absolute top-8 left-8 p-6 bg-surface-2/90 backdrop-blur-md border border-hairline rounded-xl max-w-xs hidden md:block">
+<h4 class="text-lg font-semibold text-ink mb-2">Presencia Nacional</h4>
+<p class="text-ink-tertiary text-sm leading-relaxed">
+                        Contamos con puntos estratégicos para garantizar la cobertura de descarbonización en las principales ciudades industriales del país.
+                    </p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded border border-primary/20">BOG</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded border border-primary/20">MDE</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded border border-primary/20">CLO</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded border border-primary/20">BAQ</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-[1280px] mx-auto px-6 mb-24">
+<div class="bg-surface-1 border border-hairline-strong rounded-xl p-12 md:p-16 text-center">
+<h3 class="text-3xl md:text-4xl font-semibold tracking-tight text-ink mb-6">¿Listo para empezar a ahorrar?</h3>
+<p class="text-ink-muted mb-10 max-w-xl mx-auto text-lg">Únete a cientos de empresas colombianas que ya reducen sus costos operativos y cuidan el planeta.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="px-8 py-4 bg-primary text-canvas font-bold rounded-lg hover:bg-primary-hover transition-all">
+                        Programar Diagnóstico Gratis
+                    </button>
+<button class="px-8 py-4 bg-surface-2 border border-hairline text-ink font-bold rounded-lg hover:bg-surface-3 transition-all">
+                        Ver Catálogo Técnico
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#010102] border-t border-[#23252a]">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 py-16 px-6 max-w-[1280px] mx-auto">
+<div class="col-span-2">
+<div class="text-headline-sm font-bold tracking-tighter text-[#f7f8f8] mb-4">HYDROCELL</div>
+<p class="font-body text-caption text-[#62666d] max-w-sm">
+                    © 2024 HYDROCELL S.A.S. Mejoramos tu motor, el planeta y tu bolsillo te lo agradecen.
+                </p>
+</div>
+<div>
+<p class="text-[#00b9b5] text-xs font-bold uppercase tracking-widest mb-4">Empresa</p>
+<ul class="space-y-3 font-body text-caption text-[#62666d]">
+<li><a class="hover:text-[#d0d6e0] transition-colors" href="#">Sedes</a></li>
+<li><a class="hover:text-[#d0d6e0] transition-colors" href="#">Blog</a></li>
+<li><a class="hover:text-[#d0d6e0] transition-colors" href="#">Contacto</a></li>
+</ul>
+</div>
+<div>
+<p class="text-[#00b9b5] text-xs font-bold uppercase tracking-widest mb-4">Legal</p>
+<ul class="space-y-3 font-body text-caption text-[#62666d]">
+<li><a class="hover:text-[#d0d6e0] transition-colors" href="#">Privacidad</a></li>
+<li><a class="hover:text-[#d0d6e0] transition-colors" href="#">Términos</a></li>
+<li><a class="hover:text-[#d0d6e0] transition-colors" href="#">LinkedIn</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for form
+        document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('button');
+            const originalContent = btn.innerHTML;
+            
+            btn.disabled = true;
+            btn.innerHTML = `
+                <span class="animate-spin material-symbols-outlined">progress_activity</span>
+                <span>Enviando...</span>
+            `;
+            
+            setTimeout(() => {
+                btn.innerHTML = `
+                    <span class="material-symbols-outlined">check_circle</span>
+                    <span>¡Mensaje Enviado!</span>
+                `;
+                btn.classList.replace('bg-primary', 'bg-semantic-success');
+                this.reset();
+                
+                setTimeout(() => {
+                    btn.disabled = false;
+                    btn.innerHTML = originalContent;
+                    btn.classList.replace('bg-semantic-success', 'bg-primary');
+                }, 3000);
+            }, 1500);
+        });
+
+        // Simple parallax effect for map
+        window.addEventListener('scroll', () => {
+            const mapImage = document.querySelector('img[data-location="Colombia"]');
+            if (mapImage) {
+                const scrolled = window.pageYOffset;
+                mapImage.style.transform = `translateY(${scrolled * 0.05}px) scale(${1 + scrolled * 0.0001})`;
+            }
+        });
+    </script>
+</body></html>

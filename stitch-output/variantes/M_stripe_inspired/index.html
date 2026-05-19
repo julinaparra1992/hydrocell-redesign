@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HYDROCELL — Devuelve la vida a tu motor con hidrógeno verde</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Material+Symbols+Outlined:wght@300..600&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#00b9b5",
+        "primary-deep": "#008f8b",
+        "primary-press": "#006e6a",
+        "primary-soft": "#3bb4c3",
+        "brand-dark": "#002830",
+        ink: "#0d253d",
+        "ink-secondary": "#273951",
+        "ink-mute": "#64748d",
+        canvas: "#ffffff",
+        "canvas-soft": "#f6fbfb",
+        "canvas-cream": "#faf6f0",
+        hairline: "#e3e8ee",
+        "hairline-input": "#a8c3de",
+        eco: "#4EBD8D",
+      },
+      fontFamily: { sans: ["Inter", "system-ui", "sans-serif"] },
+    }
+  }
+}
+</script>
+<style>
+  html, body { font-family: 'Inter', system-ui, sans-serif; background: #ffffff; color: #0d253d; }
+  .display { font-weight: 300; letter-spacing: -0.022em; line-height: 1.04; }
+  .tnum { font-variant-numeric: tabular-nums; }
+  .gradient-mesh {
+    background:
+      radial-gradient(circle at 12% 18%, #faf6f0 0%, transparent 40%),
+      radial-gradient(circle at 70% 10%, #a7e8d7 0%, transparent 45%),
+      radial-gradient(circle at 90% 40%, #c5d4ff 0%, transparent 50%),
+      radial-gradient(circle at 30% 70%, #80e7e3 0%, transparent 55%),
+      radial-gradient(circle at 85% 85%, #00b9b5 0%, transparent 60%),
+      linear-gradient(180deg, #faf6f0 0%, #f6fbfb 100%);
+    filter: saturate(1.05);
+  }
+  .pill { border-radius: 9999px; }
+  .level-2 { box-shadow: 0 8px 24px rgba(0,55,112,0.08), 0 2px 6px rgba(0,55,112,0.04); }
+  .level-1 { box-shadow: 0 1px 3px rgba(0,55,112,0.08); }
+  .nav-blur { backdrop-filter: saturate(180%) blur(20px); }
+  .micro-cap { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; }
+  .ss01 { font-feature-settings: 'ss01' on; }
+</style>
+</head>
+<body class="ss01 antialiased">
+
+<!-- NAV -->
+<header class="fixed top-0 inset-x-0 z-40 nav-blur bg-white/80 border-b border-hairline/60">
+  <nav class="max-w-[1200px] mx-auto px-6 h-[64px] flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <span class="text-[20px] font-semibold tracking-tight text-ink">HYDROCELL</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8 text-[14px] text-ink-secondary">
+      <a href="servicios.html" class="hover:text-ink transition">Servicios</a>
+      <a href="beneficios.html" class="hover:text-ink transition">Beneficios</a>
+      <a href="precios.html" class="hover:text-ink transition">Precios</a>
+      <a href="sedes.html" class="hover:text-ink transition">Sedes</a>
+      <a href="nosotros.html" class="hover:text-ink transition">Nosotros</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="contacto.html" class="text-[14px] text-ink-secondary hover:text-ink transition hidden sm:inline">Contacto</a>
+      <a href="https://wa.me/573147030001" class="pill bg-primary hover:bg-primary-deep text-white px-4 py-2 text-[14px] font-medium transition">Agendar →</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="relative pt-[64px]">
+  <div class="gradient-mesh absolute inset-0 top-[64px] h-[640px] -z-10"></div>
+  <div class="max-w-[1200px] mx-auto px-6 pt-24 pb-16">
+    <div class="max-w-3xl">
+      <span class="micro-cap text-primary-deep">Descarbonización HHO · Colombia</span>
+      <h1 class="display text-[56px] md:text-[72px] text-ink mt-4">Devuelve la vida a tu motor con hidrógeno&nbsp;verde.</h1>
+      <p class="mt-6 text-[18px] text-ink-secondary font-light leading-relaxed max-w-2xl">Mejoramos tu motor, el planeta y tu bolsillo te lo agradecen. Una sola sesión de 30 a 80 minutos para limpiar la carbonilla acumulada en válvulas, pistones y cámara de combustión.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="https://wa.me/573147030001" class="pill bg-primary hover:bg-primary-deep text-white px-5 py-3 font-medium text-[16px] transition">Agendar por WhatsApp</a>
+        <a href="servicios.html" class="pill bg-white text-primary-deep border border-primary px-5 py-3 font-medium text-[16px] hover:bg-canvas-soft transition">Ver cómo funciona →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="bg-white">
+  <div class="max-w-[1200px] mx-auto px-6 py-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+    <div>
+      <div class="display text-[44px] text-primary-deep tnum">76<span class="text-[24px] text-ink-secondary">%</span></div>
+      <p class="text-[13px] text-ink-mute mt-1 font-light">Reducción HC</p>
+    </div>
+    <div>
+      <div class="display text-[44px] text-primary-deep tnum">74<span class="text-[24px] text-ink-secondary">%</span></div>
+      <p class="text-[13px] text-ink-mute mt-1 font-light">Reducción CO</p>
+    </div>
+    <div>
+      <div class="display text-[44px] text-primary-deep tnum">75<span class="text-[24px] text-ink-secondary">%</span></div>
+      <p class="text-[13px] text-ink-mute mt-1 font-light">Reducción NOx</p>
+    </div>
+    <div>
+      <div class="display text-[44px] text-primary-deep tnum">30<span class="text-[18px] text-ink-secondary">&nbsp;min</span></div>
+      <p class="text-[13px] text-ink-mute mt-1 font-light">Tiempo de servicio</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRES PILARES -->
+<section class="bg-canvas-soft">
+  <div class="max-w-[1200px] mx-auto px-6 py-24">
+    <div class="max-w-2xl">
+      <span class="micro-cap text-primary-deep">Beneficios</span>
+      <h2 class="display text-[36px] md:text-[44px] text-ink mt-3">Mejoramos tu motor, el planeta y tu bolsillo.</h2>
+    </div>
+    <div class="mt-12 grid md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl p-8 border border-hairline level-1">
+        <span class="material-symbols-outlined text-primary text-[28px]">settings</span>
+        <h3 class="mt-4 text-[22px] font-light text-ink tracking-tight">Motor</h3>
+        <p class="mt-3 text-[15px] text-ink-secondary font-light leading-relaxed">Recupera potencia y respuesta del acelerador. Elimina ruidos por carbonilla en pistones y válvulas.</p>
+      </div>
+      <div class="bg-white rounded-xl p-8 border border-hairline level-1">
+        <span class="material-symbols-outlined text-eco text-[28px]">eco</span>
+        <h3 class="mt-4 text-[22px] font-light text-ink tracking-tight">Planeta</h3>
+        <p class="mt-3 text-[15px] text-ink-secondary font-light leading-relaxed">Reducimos hasta 76% de hidrocarburos. Hidrógeno verde generado en el momento desde agua destilada.</p>
+      </div>
+      <div class="bg-white rounded-xl p-8 border border-hairline level-1">
+        <span class="material-symbols-outlined text-primary text-[28px]">savings</span>
+        <h3 class="mt-4 text-[22px] font-light text-ink tracking-tight">Bolsillo</h3>
+        <p class="mt-3 text-[15px] text-ink-secondary font-light leading-relaxed">Ahorras combustible. Evitas reparaciones costosas de inyectores y válvulas EGR.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRECIOS -->
+<section id="precios" class="bg-white">
+  <div class="max-w-[1200px] mx-auto px-6 py-24">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="micro-cap text-primary-deep">Precios</span>
+      <h2 class="display text-[36px] md:text-[44px] text-ink mt-3">Tarifas según el cilindraje real de tu motor.</h2>
+      <p class="mt-4 text-[16px] text-ink-secondary font-light">Sin paquetes inflados. Incluye análisis de gases antes y después.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl p-8 border border-hairline level-1 flex flex-col">
+        <span class="micro-cap text-ink-mute">Auto pequeño</span>
+        <div class="display text-[40px] text-ink mt-2 tnum">$170.000</div>
+        <p class="text-[13px] text-ink-mute font-light">1.000 – 1.990 c.c.</p>
+        <ul class="mt-6 space-y-3 text-[14px] text-ink-secondary font-light flex-grow">
+          <li class="flex gap-2"><span class="text-primary">✓</span> 35 min de servicio</li>
+          <li class="flex gap-2"><span class="text-primary">✓</span> 1.000 L de HHO</li>
+          <li class="flex gap-2"><span class="text-primary">✓</span> Análisis de gases</li>
+        </ul>
+        <a href="https://wa.me/573147030001" class="pill mt-8 text-center bg-canvas-soft hover:bg-hairline text-ink-secondary py-2.5 font-medium text-[14px] transition">Agendar</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl p-8 border border-hairline level-1 flex flex-col">
+        <span class="micro-cap text-ink-mute">Auto mediano</span>
+        <div class="display text-[40px] text-ink mt-2 tnum">$200.000</div>
+        <p class="text-[13px] text-ink-mute font-light">2.000 – 2.990 c.c.</p>
+        <ul class="mt-6 space-y-3 text-[14px] text-ink-secondary font-light flex-grow">
+          <li class="flex gap-2"><span class="text-primary">✓</span> 40 min de servicio</li>
+          <li class="flex gap-2"><span class="text-primary">✓</span> 1.300 L de HHO</li>
+          <li class="flex gap-2"><span class="text-primary">✓</span> Análisis de gases</li>
+        </ul>
+        <a href="https://wa.me/573147030001" class="pill mt-8 text-center bg-canvas-soft hover:bg-hairline text-ink-secondary py-2.5 font-medium text-[14px] transition">Agendar</a>
+      </div>
+
+      <!-- Card destacada -->
+      <div class="bg-brand-dark text-white rounded-xl p-8 level-2 flex flex-col">
+        <div class="flex items-center justify-between">
+          <span class="micro-cap text-primary-soft">Camioneta · SUV</span>
+          <span class="pill bg-primary text-brand-dark micro-cap px-2.5 py-1">Más pedido</span>
+        </div>
+        <div class="display text-[40px] mt-2 tnum">$240.000</div>
+        <p class="text-[13px] text-white/60 font-light">3.000 – 5.000 c.c.</p>
+        <ul class="mt-6 space-y-3 text-[14px] text-white/85 font-light flex-grow">
+          <li class="flex gap-2"><span class="text-primary-soft">✓</span> 60 min de servicio</li>
+          <li class="flex gap-2"><span class="text-primary-soft">✓</span> 1.600 L de HHO</li>
+          <li class="flex gap-2"><span class="text-primary-soft">✓</span> Análisis de gases certificado</li>
+        </ul>
+        <a href="https://wa.me/573147030001" class="pill mt-8 text-center bg-primary hover:bg-primary-soft text-brand-dark py-2.5 font-medium text-[14px] transition">Agendar</a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white rounded-xl p-8 border border-hairline level-1 flex flex-col">
+        <span class="micro-cap text-ink-mute">Camión · pesado</span>
+        <div class="display text-[40px] text-ink mt-2 tnum">$350.000</div>
+        <p class="text-[13px] text-ink-mute font-light">5.000 – 10.000 c.c.</p>
+        <ul class="mt-6 space-y-3 text-[14px] text-ink-secondary font-light flex-grow">
+          <li class="flex gap-2"><span class="text-primary">✓</span> 80 min de servicio</li>
+          <li class="flex gap-2"><span class="text-primary">✓</span> 2.500 L de HHO</li>
+          <li class="flex gap-2"><span class="text-primary">✓</span> Reporte de emisiones</li>
+        </ul>
+        <a href="https://wa.me/573147030001" class="pill mt-8 text-center bg-canvas-soft hover:bg-hairline text-ink-secondary py-2.5 font-medium text-[14px] transition">Agendar</a>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white rounded-xl p-8 border border-hairline level-1 flex flex-col">
+        <span class="micro-cap text-ink-mute">Moto pequeña</span>
+        <div class="display text-[40px] text-ink mt-2 tnum">$100.000</div>
+        <p class="text-[13px] text-ink-mute font-light">100 – 500 c.c.</p>
+        <ul class="mt-6 space-y-3 text-[14px] text-ink-secondary font-light flex-grow">
+          <li class="flex gap-2"><span class="text-primary">✓</span> 30 min de servicio</li>
+          <li class="flex gap-2"><span class="text-primary">✓</span> 800 L de HHO</li>
+          <li class="flex gap-2"><span class="text-primary">✓</span> Análisis de gases</li>
+        </ul>
+        <a href="https://wa.me/573147030001" class="pill mt-8 text-center bg-canvas-soft hover:bg-hairline text-ink-secondary py-2.5 font-medium text-[14px] transition">Agendar</a>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-white rounded-xl p-8 border border-hairline level-1 flex flex-col">
+        <span class="micro-cap text-ink-mute">Moto grande</span>
+        <div class="display text-[40px] text-ink mt-2 tnum">$150.000</div>
+        <p class="text-[13px] text-ink-mute font-light">500 – 1.000 c.c.</p>
+        <ul class="mt-6 space-y-3 text-[14px] text-ink-secondary font-light flex-grow">
+          <li class="flex gap-2"><span class="text-primary">✓</span> 30 min de servicio</li>
+          <li class="flex gap-2"><span class="text-primary">✓</span> 1.000 L de HHO</li>
+          <li class="flex gap-2"><span class="text-primary">✓</span> Análisis de gases</li>
+        </ul>
+        <a href="https://wa.me/573147030001" class="pill mt-8 text-center bg-canvas-soft hover:bg-hairline text-ink-secondary py-2.5 font-medium text-[14px] transition">Agendar</a>
+      </div>
+    </div>
+    <p class="text-center mt-12 text-[13px] text-ink-mute font-light">Precios en pesos colombianos. Atención con cita previa por WhatsApp.</p>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section class="bg-canvas-cream">
+  <div class="max-w-[1200px] mx-auto px-6 py-24">
+    <div class="max-w-2xl mb-16">
+      <span class="micro-cap text-primary-deep">Cómo funciona</span>
+      <h2 class="display text-[36px] md:text-[44px] text-ink mt-3">Cuatro pasos, sin abrir el motor.</h2>
+    </div>
+    <div class="grid md:grid-cols-4 gap-6">
+      <div>
+        <div class="display text-[32px] text-primary tnum">01</div>
+        <h3 class="mt-3 text-[18px] font-light text-ink tracking-tight">Análisis inicial</h3>
+        <p class="mt-2 text-[14px] text-ink-secondary font-light leading-relaxed">Medimos los gases de escape de tu vehículo antes del servicio.</p>
+      </div>
+      <div>
+        <div class="display text-[32px] text-primary tnum">02</div>
+        <h3 class="mt-3 text-[18px] font-light text-ink tracking-tight">Conexión HHO</h3>
+        <p class="mt-2 text-[14px] text-ink-secondary font-light leading-relaxed">Conectamos el generador HHO al sistema de admisión.</p>
+      </div>
+      <div>
+        <div class="display text-[32px] text-primary tnum">03</div>
+        <h3 class="mt-3 text-[18px] font-light text-ink tracking-tight">Ciclo de limpieza</h3>
+        <p class="mt-2 text-[14px] text-ink-secondary font-light leading-relaxed">Entre 30 y 80 minutos según el cilindraje. Disuelve la carbonilla.</p>
+      </div>
+      <div>
+        <div class="display text-[32px] text-primary tnum">04</div>
+        <h3 class="mt-3 text-[18px] font-light text-ink tracking-tight">Análisis final</h3>
+        <p class="mt-2 text-[14px] text-ink-secondary font-light leading-relaxed">Te entregamos reporte con las emisiones antes y después.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEDES -->
+<section id="sedes" class="bg-white">
+  <div class="max-w-[1200px] mx-auto px-6 py-24">
+    <div class="max-w-2xl mb-12">
+      <span class="micro-cap text-primary-deep">Sedes</span>
+      <h2 class="display text-[36px] md:text-[44px] text-ink mt-3">Cuatro ciudades en Colombia.</h2>
+      <p class="mt-4 text-[16px] text-ink-secondary font-light">Atendemos con cita previa por WhatsApp.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <a href="https://wa.me/573147030001" class="block bg-canvas-soft rounded-xl p-6 hover:bg-canvas-cream transition group">
+        <span class="material-symbols-outlined text-primary">location_on</span>
+        <h3 class="mt-3 text-[18px] font-light text-ink tracking-tight">Bogotá</h3>
+        <p class="text-[13px] text-ink-mute font-light mt-1">Sede principal</p>
+        <span class="block mt-4 text-[14px] text-primary-deep group-hover:underline">WhatsApp →</span>
+      </a>
+      <a href="https://wa.me/573147030001" class="block bg-canvas-soft rounded-xl p-6 hover:bg-canvas-cream transition group">
+        <span class="material-symbols-outlined text-primary">location_on</span>
+        <h3 class="mt-3 text-[18px] font-light text-ink tracking-tight">Medellín</h3>
+        <p class="text-[13px] text-ink-mute font-light mt-1">Sede Antioquia</p>
+        <span class="block mt-4 text-[14px] text-primary-deep group-hover:underline">WhatsApp →</span>
+      </a>
+      <a href="https://wa.me/573147030001" class="block bg-canvas-soft rounded-xl p-6 hover:bg-canvas-cream transition group">
+        <span class="material-symbols-outlined text-primary">location_on</span>
+        <h3 class="mt-3 text-[18px] font-light text-ink tracking-tight">Cali</h3>
+        <p class="text-[13px] text-ink-mute font-light mt-1">Sede Valle</p>
+        <span class="block mt-4 text-[14px] text-primary-deep group-hover:underline">WhatsApp →</span>
+      </a>
+      <a href="https://wa.me/573147030001" class="block bg-canvas-soft rounded-xl p-6 hover:bg-canvas-cream transition group">
+        <span class="material-symbols-outlined text-primary">location_on</span>
+        <h3 class="mt-3 text-[18px] font-light text-ink tracking-tight">Barranquilla</h3>
+        <p class="text-[13px] text-ink-mute font-light mt-1">Sede Caribe</p>
+        <span class="block mt-4 text-[14px] text-primary-deep group-hover:underline">WhatsApp →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="bg-canvas-soft">
+  <div class="max-w-[1200px] mx-auto px-6 py-24 text-center">
+    <h2 class="display text-[36px] md:text-[48px] text-ink max-w-3xl mx-auto">¿Listo para devolverle la vida a tu motor?</h2>
+    <p class="mt-4 text-[16px] text-ink-secondary font-light">Escríbenos por WhatsApp y agendamos en menos de un minuto.</p>
+    <a href="https://wa.me/573147030001" class="inline-flex items-center gap-2 mt-8 pill bg-primary hover:bg-primary-deep text-white px-6 py-3 font-medium text-[16px] transition">
+      <span class="material-symbols-outlined text-[20px]">chat</span>
+      Hablar por WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-white border-t border-hairline">
+  <div class="max-w-[1200px] mx-auto px-6 py-16 grid grid-cols-2 md:grid-cols-5 gap-10">
+    <div class="col-span-2">
+      <span class="text-[20px] font-semibold tracking-tight text-ink">HYDROCELL</span>
+      <p class="mt-4 text-[13px] text-ink-mute font-light max-w-xs">Descarbonización de motores con tecnología de hidrógeno verde. Empresa colombiana desde 2013.</p>
+    </div>
+    <div>
+      <h4 class="micro-cap text-ink">Producto</h4>
+      <ul class="mt-4 space-y-3 text-[14px] text-ink-secondary font-light">
+        <li><a href="servicios.html" class="hover:text-ink transition">Servicios</a></li>
+        <li><a href="beneficios.html" class="hover:text-ink transition">Beneficios</a></li>
+        <li><a href="precios.html" class="hover:text-ink transition">Precios</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="micro-cap text-ink">Compañía</h4>
+      <ul class="mt-4 space-y-3 text-[14px] text-ink-secondary font-light">
+        <li><a href="nosotros.html" class="hover:text-ink transition">Nosotros</a></li>
+        <li><a href="sedes.html" class="hover:text-ink transition">Sedes</a></li>
+        <li><a href="contacto.html" class="hover:text-ink transition">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="micro-cap text-ink">Contacto</h4>
+      <ul class="mt-4 space-y-3 text-[14px] text-ink-secondary font-light">
+        <li><a href="https://wa.me/573147030001" class="hover:text-ink transition">WhatsApp</a></li>
+        <li class="text-ink-mute tnum">+57 314 703 0001</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-hairline">
+    <div class="max-w-[1200px] mx-auto px-6 py-6 text-[12px] text-ink-mute font-light">© 2026 HYDROCELL S.A.S. Mejoramos tu motor, el planeta y tu bolsillo te lo agradecen.</div>
+  </div>
+</footer>
+
+</body>
+</html>

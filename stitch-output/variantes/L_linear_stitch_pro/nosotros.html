@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nosotros | HYDROCELL S.A.S.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Public+Sans:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        canvas: "#010102",
+                        surface: { 1: "#0f1011", 2: "#141516", 3: "#18191a", 4: "#191a1b" },
+                        hairline: "#23252a",
+                        "hairline-strong": "#34343a",
+                        ink: "#f7f8f8",
+                        "ink-muted": "#d0d6e0",
+                        "ink-subtle": "#8a8f98",
+                        "ink-tertiary": "#62666d",
+                        primary: "#00b9b5",
+                        "primary-hover": "#3bb4c3",
+                        "primary-focus": "#008f8b",
+                        "secondary-accent": "#4EBD8D",
+                    },
+                    fontFamily: {
+                        headline: ["Inter", "sans-serif"],
+                        display: ["Inter", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        label: ["Public Sans", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.5rem", "xl": "1rem", "full": "9999px" }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        body { background-color: #010102; color: #f7f8f8; font-family: 'Inter', sans-serif; }
+        .bg-grid-pattern { background-image: radial-gradient(#23252a 1px, transparent 1px); background-size: 40px 40px; }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary/30">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#010102]/80 backdrop-blur-md border-b border-[#23252a]">
+<nav class="flex justify-between items-center h-[56px] px-6 max-w-[1280px] mx-auto">
+<a href="index.html" class="font-display text-[18px] font-semibold tracking-[-0.6px] text-[#f7f8f8]">HYDROCELL</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#8a8f98] font-medium text-[14px] tracking-tight hover:text-[#f7f8f8] transition-colors" href="servicios.html">Servicios</a>
+<a class="text-[#8a8f98] font-medium text-[14px] tracking-tight hover:text-[#f7f8f8] transition-colors" href="beneficios.html">Beneficios</a>
+<a class="text-[#8a8f98] font-medium text-[14px] tracking-tight hover:text-[#f7f8f8] transition-colors" href="sedes.html">Sedes</a>
+<a class="text-[#8a8f98] font-medium text-[14px] tracking-tight hover:text-[#f7f8f8] transition-colors" href="precios.html">Precios</a>
+<a class="text-[#f7f8f8] font-medium text-[14px] tracking-tight hover:text-[#f7f8f8] transition-colors" href="nosotros.html">Nosotros</a>
+</div>
+<div class="flex items-center space-x-4">
+<a href="contacto.html" class="text-[#8a8f98] font-medium text-[14px] hover:text-[#f7f8f8] transition-colors">Contacto</a>
+<a href="https://wa.me/573147030001" class="bg-[#00b9b5] text-[#010102] px-4 py-1.5 rounded-lg text-[14px] font-medium active:scale-95 transition-transform">Agendar</a>
+</div>
+</nav>
+</header>
+
+<main class="pt-[56px]">
+<!-- Hero -->
+<section class="relative overflow-hidden pt-24 pb-24">
+<div class="absolute inset-0 bg-grid-pattern opacity-20"></div>
+<div class="max-w-[1280px] mx-auto px-6 relative z-10 text-center">
+<div class="inline-block mb-6 px-3 py-1 rounded-full border border-primary/20 bg-primary/10">
+<span class="text-primary font-medium text-[13px] tracking-[0.4px] uppercase">Empresa colombiana · Desde 2013</span>
+</div>
+<h1 class="text-[56px] md:text-[80px] font-semibold tracking-[-3.0px] leading-[1.05] mb-8 text-ink max-w-4xl mx-auto">
+HYDROCELL S.A.S.
+</h1>
+<p class="text-ink-muted text-[18px] md:text-[20px] max-w-2xl mx-auto leading-relaxed">
+Somos una empresa colombiana dedicada a la descarbonización de motores con tecnología de hidrógeno verde. Reducimos emisiones contaminantes y devolvemos rendimiento al motor sin abrirlo.
+</p>
+</div>
+</section>
+
+<!-- Misión / Visión / Valores -->
+<section class="max-w-[1280px] mx-auto px-6 py-24">
+<div class="text-center mb-16">
+<span class="text-xs font-medium text-primary uppercase tracking-[0.2em]">Quiénes somos</span>
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight text-ink mt-3">Nuestra razón de ser</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="flex flex-col p-8 rounded-xl bg-surface-1 border border-hairline">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="flag">flag</span>
+<h3 class="text-[22px] font-semibold text-ink mb-3 tracking-[-0.4px]">Misión</h3>
+<p class="text-ink-subtle leading-relaxed">Mejorar el rendimiento de los motores y reducir las emisiones contaminantes con tecnología limpia accesible a todos.</p>
+</div>
+<div class="flex flex-col p-8 rounded-xl bg-surface-1 border border-hairline">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="visibility">visibility</span>
+<h3 class="text-[22px] font-semibold text-ink mb-3 tracking-[-0.4px]">Visión</h3>
+<p class="text-ink-subtle leading-relaxed">Ser la red de descarbonización vehicular más confiable de Latinoamérica, con presencia en cada capital del país.</p>
+</div>
+<div class="flex flex-col p-8 rounded-xl bg-surface-1 border border-hairline">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="favorite">favorite</span>
+<h3 class="text-[22px] font-semibold text-ink mb-3 tracking-[-0.4px]">Valores</h3>
+<p class="text-ink-subtle leading-relaxed">Honestidad técnica, compromiso ambiental y servicio cercano. Cobramos lo justo y hacemos lo que prometemos.</p>
+</div>
+</div>
+</section>
+
+<!-- Tecnología certificada -->
+<section class="max-w-[1280px] mx-auto px-6 py-24">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div>
+<span class="text-xs font-medium text-primary uppercase tracking-[0.2em]">Tecnología</span>
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight text-ink mt-3 mb-6">Equipos patentados en USA y la Unión Europea</h2>
+<p class="text-ink-muted leading-relaxed mb-4">Nuestros generadores HHO cumplen con los más altos estándares de seguridad automotriz internacional.</p>
+<p class="text-ink-subtle leading-relaxed">Producimos hidrógeno verde a partir de agua destilada en el momento del servicio. Sin almacenamiento, sin riesgo, sin químicos agregados al motor.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-6 rounded-xl bg-surface-1 border border-hairline">
+<div class="text-3xl font-bold text-ink tabular-nums">76<span class="text-primary">%</span></div>
+<p class="text-sm text-ink-subtle mt-2">Reducción HC</p>
+</div>
+<div class="p-6 rounded-xl bg-surface-1 border border-hairline">
+<div class="text-3xl font-bold text-ink tabular-nums">74<span class="text-primary">%</span></div>
+<p class="text-sm text-ink-subtle mt-2">Reducción CO</p>
+</div>
+<div class="p-6 rounded-xl bg-surface-1 border border-hairline">
+<div class="text-3xl font-bold text-ink tabular-nums">75<span class="text-primary">%</span></div>
+<p class="text-sm text-ink-subtle mt-2">Reducción NOx</p>
+</div>
+<div class="p-6 rounded-xl bg-surface-1 border border-hairline">
+<div class="text-3xl font-bold text-ink tabular-nums">30<span class="text-primary">min</span></div>
+<p class="text-sm text-ink-subtle mt-2">Servicio típico</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="max-w-[1280px] mx-auto px-6 py-24">
+<div class="bg-surface-1 border border-hairline rounded-xl p-12 md:p-16 text-center">
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight text-ink mb-4">Mejoramos tu motor, el planeta y tu bolsillo te lo agradecen</h2>
+<p class="text-ink-muted mb-8 max-w-2xl mx-auto">Escríbenos por WhatsApp y agendamos el servicio en la sede que prefieras.</p>
+<a href="https://wa.me/573147030001" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-canvas px-8 py-3 rounded-lg font-medium transition-all">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+Hablar por WhatsApp
+</a>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#010102] border-t border-[#23252a] mt-12">
+<div class="max-w-[1280px] mx-auto py-16 px-8 grid grid-cols-2 md:grid-cols-4 gap-12">
+<div>
+<span class="font-display text-[22px] font-bold tracking-[-0.4px] text-[#f7f8f8] mb-6 block">HYDROCELL</span>
+<p class="text-[14px] text-[#8a8f98] leading-relaxed max-w-[200px]">© 2026 HYDROCELL S.A.S. Mejoramos tu motor, el planeta y tu bolsillo te lo agradecen.</p>
+</div>
+<div>
+<h4 class="text-[#f7f8f8] font-medium text-[14px] mb-6">Producto</h4>
+<ul class="space-y-4">
+<li><a class="text-[14px] text-[#8a8f98] hover:text-[#f7f8f8] transition-colors" href="servicios.html">Servicios</a></li>
+<li><a class="text-[14px] text-[#8a8f98] hover:text-[#f7f8f8] transition-colors" href="beneficios.html">Beneficios</a></li>
+<li><a class="text-[14px] text-[#8a8f98] hover:text-[#f7f8f8] transition-colors" href="precios.html">Precios</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[#f7f8f8] font-medium text-[14px] mb-6">Compañía</h4>
+<ul class="space-y-4">
+<li><a class="text-[14px] text-[#8a8f98] hover:text-[#f7f8f8] transition-colors" href="nosotros.html">Nosotros</a></li>
+<li><a class="text-[14px] text-[#8a8f98] hover:text-[#f7f8f8] transition-colors" href="sedes.html">Sedes</a></li>
+<li><a class="text-[14px] text-[#8a8f98] hover:text-[#f7f8f8] transition-colors" href="contacto.html">Contacto</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[#f7f8f8] font-medium text-[14px] mb-6">Contacto</h4>
+<ul class="space-y-4">
+<li><a class="text-[14px] text-[#8a8f98] hover:text-[#f7f8f8] transition-colors" href="https://wa.me/573147030001">WhatsApp</a></li>
+<li><span class="text-[14px] text-[#8a8f98]">+57 314 703 0001</span></li>
+</ul>
+</div>
+</div>
+</footer>
+</body>
+</html>

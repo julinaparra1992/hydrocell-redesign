@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sedes | HYDROCELL - Descarbonización de Motores</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Public+Sans:wght@500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        canvas: "#010102",
+                        "surface-1": "#0f1011",
+                        "surface-2": "#141516",
+                        "surface-3": "#18191a",
+                        "surface-4": "#191a1b",
+                        hairline: "#23252a",
+                        "hairline-strong": "#34343a",
+                        ink: "#f7f8f8",
+                        "ink-muted": "#d0d6e0",
+                        "ink-subtle": "#8a8f98",
+                        "ink-tertiary": "#62666d",
+                        primary: "#00b9b5",
+                        "primary-hover": "#3bb4c3",
+                        "primary-focus": "#008f8b",
+                        "secondary-accent": "#4EBD8D",
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.5rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        headline: ["Inter", "sans-serif"],
+                        display: ["Inter", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        label: ["Public Sans", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #010102;
+            color: #f7f8f8;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-cyan {
+            background: radial-gradient(circle at center, rgba(0, 185, 181, 0.08) 0%, transparent 70%);
+        }
+        .sede-card:hover {
+            border-color: #00b9b5;
+            background-color: #141516;
+        }
+    </style>
+</head>
+<body class="font-body">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-canvas border-b border-hairline">
+<div class="flex justify-between items-center h-[56px] px-6 max-w-[1280px] mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-ink font-headline font-bold tracking-[-1.0px] text-lg">HYDROCELL</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-primary font-medium font-headline tracking-[-0.05em] transition-colors duration-200" href="#">Sedes</a>
+<a class="text-ink-subtle hover:text-ink font-headline font-medium tracking-[-0.05em] transition-colors duration-200" href="#">Tecnología</a>
+<a class="text-ink-subtle hover:text-ink font-headline font-medium tracking-[-0.05em] transition-colors duration-200" href="#">Beneficios</a>
+<a class="text-ink-subtle hover:text-ink font-headline font-medium tracking-[-0.05em] transition-colors duration-200" href="#">Impacto</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-ink-subtle hover:text-ink font-headline font-medium tracking-[-0.05em] transition-all active:opacity-80">Ingresar</button>
+<button class="bg-primary hover:bg-primary-hover text-canvas px-4 py-1.5 rounded-lg font-headline font-medium tracking-[-0.05em] transition-all active:opacity-80">Comenzar</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-24 px-6 overflow-hidden">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[500px] glow-cyan pointer-events-none"></div>
+<div class="max-w-[1280px] mx-auto text-center relative z-10">
+<span class="text-primary font-label text-[13px] tracking-[0.4px] uppercase mb-4 block">Presencia Nacional</span>
+<h1 class="text-ink text-[56px] md:text-[80px] font-bold tracking-[-3.0px] leading-[1.1] mb-6">
+                Cuatro sedes en Colombia
+            </h1>
+<p class="text-ink-muted text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                Nuestra expansión nacional está diseñada para llevar la tecnología de descarbonización por hidrógeno verde a cada rincón del país, mejorando el rendimiento de tu motor y protegiendo el medio ambiente.
+            </p>
+</div>
+</header>
+<!-- Sedes Grid (2x2) -->
+<section class="py-24 px-6 bg-canvas">
+<div class="max-w-[1280px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Bogotá -->
+<div class="sede-card bg-surface-1 border border-hairline p-8 rounded-xl transition-all duration-300">
+<div class="flex justify-between items-start mb-6">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-label text-sm tracking-[0.4px] uppercase font-semibold">Sede Principal</span>
+</div>
+<h3 class="text-ink text-[32px] font-bold tracking-[-1.0px]">Bogotá</h3>
+</div>
+<div class="w-16 h-16 rounded-lg bg-surface-2 border border-hairline-strong flex items-center justify-center">
+<span class="material-symbols-outlined text-ink-muted text-3xl">apartment</span>
+</div>
+</div>
+<p class="text-ink-tertiary mb-8 text-lg">Atención con cita previa para garantizar la mejor experiencia técnica en la capital.</p>
+<a class="inline-flex items-center justify-center gap-2 w-full bg-primary hover:bg-primary-hover text-canvas font-bold py-4 rounded-lg transition-all transform active:scale-[0.98]" href="https://wa.me/573147030001" target="_blank">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+                        Agendar en Bogotá
+                    </a>
+</div>
+<!-- Medellín -->
+<div class="sede-card bg-surface-1 border border-hairline p-8 rounded-xl transition-all duration-300">
+<div class="flex justify-between items-start mb-6">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-label text-sm tracking-[0.4px] uppercase font-semibold">Sede Antioquia</span>
+</div>
+<h3 class="text-ink text-[32px] font-bold tracking-[-1.0px]">Medellín</h3>
+</div>
+<div class="w-16 h-16 rounded-lg bg-surface-2 border border-hairline-strong flex items-center justify-center">
+<span class="material-symbols-outlined text-ink-muted text-3xl">precision_manufacturing</span>
+</div>
+</div>
+<p class="text-ink-tertiary mb-8 text-lg">Nuestro centro de innovación y taller especializado en el corazón del Valle de Aburrá.</p>
+<a class="inline-flex items-center justify-center gap-2 w-full bg-primary hover:bg-primary-hover text-canvas font-bold py-4 rounded-lg transition-all transform active:scale-[0.98]" href="https://wa.me/573147030001" target="_blank">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+                        Agendar en Medellín
+                    </a>
+</div>
+<!-- Cali -->
+<div class="sede-card bg-surface-1 border border-hairline p-8 rounded-xl transition-all duration-300">
+<div class="flex justify-between items-start mb-6">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-label text-sm tracking-[0.4px] uppercase font-semibold">Sede Valle</span>
+</div>
+<h3 class="text-ink text-[32px] font-bold tracking-[-1.0px]">Cali</h3>
+</div>
+<div class="w-16 h-16 rounded-lg bg-surface-2 border border-hairline-strong flex items-center justify-center">
+<span class="material-symbols-outlined text-ink-muted text-3xl">directions_car</span>
+</div>
+</div>
+<p class="text-ink-tertiary mb-8 text-lg">Servicio técnico avanzado para el Valle del Cauca, optimizando motores diesel y gasolina.</p>
+<a class="inline-flex items-center justify-center gap-2 w-full bg-primary hover:bg-primary-hover text-canvas font-bold py-4 rounded-lg transition-all transform active:scale-[0.98]" href="https://wa.me/573147030001" target="_blank">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+                        Agendar en Cali
+                    </a>
+</div>
+<!-- Barranquilla -->
+<div class="sede-card bg-surface-1 border border-hairline p-8 rounded-xl transition-all duration-300">
+<div class="flex justify-between items-start mb-6">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-label text-sm tracking-[0.4px] uppercase font-semibold">Sede Caribe</span>
+</div>
+<h3 class="text-ink text-[32px] font-bold tracking-[-1.0px]">Barranquilla</h3>
+</div>
+<div class="w-16 h-16 rounded-lg bg-surface-2 border border-hairline-strong flex items-center justify-center">
+<span class="material-symbols-outlined text-ink-muted text-3xl">sailing</span>
+</div>
+</div>
+<p class="text-ink-tertiary mb-8 text-lg">Soluciones de descarbonización para la costa, enfocadas en eficiencia y ahorro de combustible.</p>
+<a class="inline-flex items-center justify-center gap-2 w-full bg-primary hover:bg-primary-hover text-canvas font-bold py-4 rounded-lg transition-all transform active:scale-[0.98]" href="https://wa.me/573147030001" target="_blank">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+                        Agendar en Barranquilla
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Cómo llegamos a ti -->
+<section class="py-24 px-6 border-t border-hairline overflow-hidden">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-ink text-[40px] font-bold tracking-[-1.0px] mb-4">Cómo llegamos a ti</h2>
+<p class="text-ink-tertiary text-lg">Un proceso simple, técnico y eficiente para renovar tu vehículo.</p>
+</div>
+<div class="relative flex flex-col md:flex-row gap-8 items-start">
+<!-- Line Decor -->
+<div class="hidden md:block absolute top-12 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-hairline-strong to-transparent z-0"></div>
+<!-- Step 1 -->
+<div class="flex-1 relative z-10 group">
+<div class="bg-surface-1 border border-hairline p-8 rounded-xl group-hover:bg-surface-2 transition-all">
+<div class="w-10 h-10 rounded-full bg-canvas border border-primary text-primary flex items-center justify-center font-bold mb-6">1</div>
+<h4 class="text-ink text-xl font-semibold mb-3">Agenda</h4>
+<p class="text-ink-tertiary">Contáctanos por WhatsApp para programar tu cita en la sede más cercana a tu ubicación.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex-1 relative z-10 group">
+<div class="bg-surface-1 border border-hairline p-8 rounded-xl group-hover:bg-surface-2 transition-all">
+<div class="w-10 h-10 rounded-full bg-canvas border border-primary text-primary flex items-center justify-center font-bold mb-6">2</div>
+<h4 class="text-ink text-xl font-semibold mb-3">Visítanos</h4>
+<p class="text-ink-tertiary">Trae tu vehículo a nuestro taller especializado. El proceso toma aproximadamente 30 minutos.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex-1 relative z-10 group">
+<div class="bg-surface-1 border border-hairline p-8 rounded-xl group-hover:bg-surface-2 transition-all">
+<div class="w-10 h-10 rounded-full bg-canvas border border-secondary-accent text-secondary-accent flex items-center justify-center font-bold mb-6">3</div>
+<h4 class="text-ink text-xl font-semibold mb-3">Motor limpio</h4>
+<p class="text-ink-tertiary">Siente la potencia restaurada y comienza a ahorrar combustible de inmediato.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Map Section Visual (Abstract Decoration) -->
+<section class="py-12 px-6">
+<div class="max-w-[1280px] mx-auto">
+<div class="relative w-full h-[400px] rounded-2xl border border-hairline bg-surface-1 overflow-hidden">
+<div class="absolute inset-0 opacity-40 mix-blend-overlay">
+<img alt="Mapa de sedes" class="w-full h-full object-cover grayscale brightness-50" data-alt="A dark, stylized geographic map of Colombia rendered in a minimalist UI aesthetic with deep blacks and neon cyan points of light marking Bogotá, Medellín, Cali, and Barranquilla. The lighting is low-key, professional, and high-tech, evoking a sense of nationwide infrastructure and connectivity. Subtle grid lines and data-visualization overlays add to the premium engineering feel of the Hydrocell brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKVIsZqUo3GTI9X326cu0bXI6NHlr4Lrn7T6hsI3d8J9eMk7KPI1uG1Q8nAz4Ml35RuStpUsKkzZg2LraCnXRjUSJ1Rg6i1MBlDmfRNi9DuEdh951oeBylfHsIweddE36KDfvpmn17O0s_ZQPwZHS1Dz1j5cNQh2WP6iOwfx7vVVX1pcScbqCE9oiPZWBRl5Fyp9rx3oTASDAdmeKnCm2y-V41sGHmlV_kTGp7BcGCiGalLHNIfpuUy79ylzRpaC7nTG0QHCb8btw"/>
+</div>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-8 bg-gradient-to-t from-canvas via-transparent to-transparent">
+<h3 class="text-ink text-[28px] font-bold tracking-[-0.6px] mb-4">Liderando la transición energética</h3>
+<p class="text-ink-muted max-w-lg">Estamos transformando la movilidad en Colombia con cada motor descarbonizado.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-canvas border-t border-hairline w-full py-24">
+<div class="max-w-[1280px] mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-12">
+<div class="col-span-2 md:col-span-1">
+<span class="text-ink-muted font-headline font-semibold block mb-4 uppercase text-xs tracking-wider">Hydrocell</span>
+<p class="text-ink-tertiary font-body text-[12px] leading-relaxed mb-6">
+                    Mejoramos tu motor, el planeta y tu bolsillo te lo agradecen. Descarbonización técnica garantizada.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-ink-tertiary hover:text-primary cursor-pointer transition-colors">public</span>
+<span class="material-symbols-outlined text-ink-tertiary hover:text-primary cursor-pointer transition-colors">share</span>
+</div>
+</div>
+<div>
+<span class="text-ink-muted font-headline font-semibold block mb-4 uppercase text-xs tracking-wider">Empresa</span>
+<ul class="space-y-3">
+<li><a class="text-ink-tertiary hover:text-primary transition-colors text-sm" href="#">Sedes</a></li>
+<li><a class="text-ink-tertiary hover:text-primary transition-colors text-sm" href="#">Contacto</a></li>
+<li><a class="text-ink-tertiary hover:text-primary transition-colors text-sm" href="#">Blog</a></li>
+</ul>
+</div>
+<div>
+<span class="text-ink-muted font-headline font-semibold block mb-4 uppercase text-xs tracking-wider">Legal</span>
+<ul class="space-y-3">
+<li><a class="text-ink-tertiary hover:text-primary transition-colors text-sm" href="#">Privacidad</a></li>
+<li><a class="text-ink-tertiary hover:text-primary transition-colors text-sm" href="#">Términos</a></li>
+</ul>
+</div>
+<div class="col-span-2 md:col-span-1 text-right md:text-left">
+<span class="text-ink-muted font-headline font-semibold block mb-4 uppercase text-xs tracking-wider">Ubicación</span>
+<p class="text-ink-tertiary font-body text-[12px] mb-2">Sede Central: Bogotá, Colombia</p>
+<p class="text-ink-tertiary font-body text-[12px] mb-8">© 2024 HYDROCELL S.A.S. Medellín, Colombia.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions and scroll effects
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.sede-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.classList.add('scale-[1.01]');
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.classList.remove('scale-[1.01]');
+                });
+            });
+
+            // Smooth scroll anchor navigation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body></html>

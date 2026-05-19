@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Servicios | HYDROCELL - Descarbonización HHO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Public+Sans:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        canvas: "#010102",
+                        surface: {
+                            1: "#0f1011",
+                            2: "#141516",
+                            3: "#18191a",
+                            4: "#191a1b",
+                        },
+                        hairline: "#23252a",
+                        "hairline-strong": "#34343a",
+                        ink: "#f7f8f8",
+                        "ink-muted": "#d0d6e0",
+                        "ink-subtle": "#8a8f98",
+                        primary: "#00b9b5",
+                        "primary-hover": "#3bb4c3",
+                        "primary-focus": "#008f8b",
+                        "secondary-accent": "#4EBD8D",
+                    },
+                    fontFamily: {
+                        headline: ["Inter", "sans-serif"],
+                        display: ["Inter", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        label: ["Public Sans", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.5rem", /* 8px as per Design System */
+                        "xl": "1rem", /* 16px */
+                        "full": "9999px"
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #010102; /* Canvas color */
+            color: #f7f8f8;
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(#23252a 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary/30">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#010102]/80 backdrop-blur-md border-b border-[#23252a]">
+<nav class="flex justify-between items-center h-[56px] px-6 max-w-[1280px] mx-auto">
+<div class="font-display text-[18px] font-semibold tracking-[-0.6px] text-[#f7f8f8]">
+                HYDROCELL
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#8a8f98] font-medium font-headline text-[14px] tracking-tight hover:text-[#f7f8f8] transition-colors duration-200" href="#">Tecnología</a>
+<a class="text-[#8a8f98] font-medium font-headline text-[14px] tracking-tight hover:text-[#f7f8f8] transition-colors duration-200" href="#">Sedes</a>
+<a class="text-[#f7f8f8] font-medium font-headline text-[14px] tracking-tight hover:text-[#f7f8f8] transition-colors duration-200" href="#">Resultados</a>
+<a class="text-[#8a8f98] font-medium font-headline text-[14px] tracking-tight hover:text-[#f7f8f8] transition-colors duration-200" href="#">Precios</a>
+<a class="text-[#8a8f98] font-medium font-headline text-[14px] tracking-tight hover:text-[#f7f8f8] transition-colors duration-200" href="#">Blog</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="text-[#8a8f98] font-medium text-[14px] hover:text-[#f7f8f8] transition-colors">Iniciar</button>
+<button class="bg-[#00b9b5] text-[#010102] px-4 py-1.5 rounded-lg text-[14px] font-medium active:scale-95 transition-transform">Agendar</button>
+</div>
+</nav>
+</header>
+<main class="pt-[56px]">
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-24 pb-32">
+<div class="absolute inset-0 bg-grid-pattern opacity-20"></div>
+<div class="max-w-[1280px] mx-auto px-6 relative z-10 text-center">
+<div class="inline-block mb-6 px-3 py-1 rounded-full border border-primary/20 bg-primary/10">
+<span class="text-primary font-medium text-[13px] tracking-[0.4px] uppercase">Tecnología HHO Certificada</span>
+</div>
+<h1 class="text-[56px] md:text-[80px] font-semibold tracking-[-3.0px] leading-[1.1] mb-8 text-ink max-w-4xl mx-auto">
+                    Descarbonización con hidrógeno verde
+                </h1>
+<p class="text-ink-muted text-[18px] md:text-[20px] max-w-2xl mx-auto leading-relaxed mb-10">
+                    Mejoramos el rendimiento de tu motor y extendemos su vida útil mediante la limpieza profunda de carbonilla con hidrógeno verde. Eficiencia pura para tu vehículo.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="bg-primary hover:bg-primary-hover text-canvas px-8 py-3 rounded-lg font-medium text-[16px] transition-all shadow-lg shadow-primary/10">
+                        Agendar Servicio
+                    </button>
+<button class="bg-surface-1 border border-hairline hover:bg-surface-2 text-ink px-8 py-3 rounded-lg font-medium text-[16px] transition-all">
+                        Ver Tecnología
+                    </button>
+</div>
+</div>
+<div class="mt-20 max-w-[1100px] mx-auto px-6">
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary/20 to-transparent blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+<img alt="Servicio de motor" class="relative rounded-xl border border-hairline shadow-2xl w-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uj1dKMStZl8Q_zcqq9MK_UP7g_xjhxhF4QdqlT8IQXzPhxm1ThqkBH3mr2jDssSFHnGERiKctrQXKmU1SsxmcRBzjzC_JcObCT6b1ALYc4r6ElKtIQ-Xf-xDK0GQ7HNWwqi2iWeVt2Wx_UXKF6QtDqyNyiXAqEOwPtdHZIF72vhcdEdel1aYTBF5g4XWdVaQEEVJzWMC8d1vVtVKB8BaO84ffhyKvGoJF6ektziNBV9xjTROMMD4ieba_c"/>
+</div>
+</div>
+</section>
+<!-- Service Cards Section -->
+<section class="py-24 bg-surface-1/30">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="mb-16">
+<span class="text-primary text-[13px] font-medium tracking-[0.4px] block mb-2 uppercase">Servicios</span>
+<h2 class="text-[40px] font-semibold tracking-[-1.0px] text-ink">Soluciones de ingeniería</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Autos Particulares -->
+<div class="p-8 rounded-xl bg-surface-1 border border-hairline hover:border-primary/50 transition-all group">
+<div class="w-12 h-12 rounded-lg bg-surface-2 flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="directions_car">directions_car</span>
+</div>
+<h3 class="text-[22px] font-medium tracking-[-0.4px] text-ink mb-2">Autos particulares</h3>
+<p class="text-ink-subtle mb-6 leading-relaxed">Limpieza profunda para motores de combustión, optimizando el consumo y recuperando la potencia original.</p>
+<div class="text-primary font-mono text-[14px]">1.000 - 10.000 c.c.</div>
+</div>
+<!-- Motocicletas -->
+<div class="p-8 rounded-xl bg-surface-1 border border-hairline hover:border-primary/50 transition-all group">
+<div class="w-12 h-12 rounded-lg bg-surface-2 flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="two_wheeler">two_wheeler</span>
+</div>
+<h3 class="text-[22px] font-medium tracking-[-0.4px] text-ink mb-2">Motocicletas</h3>
+<p class="text-ink-subtle mb-6 leading-relaxed">Tratamiento especializado para motores de alto rendimiento, reduciendo vibraciones y temperatura.</p>
+<div class="text-primary font-mono text-[14px]">100 - 1.000 c.c.</div>
+</div>
+<!-- Flotas y pesados -->
+<div class="p-8 rounded-xl bg-surface-1 border border-hairline hover:border-primary/50 transition-all group">
+<div class="w-12 h-12 rounded-lg bg-surface-2 flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="local_shipping">local_shipping</span>
+</div>
+<h3 class="text-[22px] font-medium tracking-[-0.4px] text-ink mb-2">Flotas y pesados</h3>
+<p class="text-ink-subtle mb-6 leading-relaxed">Protocolos industriales para transporte de carga y pasajeros. Máximo ahorro de combustible.</p>
+<div class="text-primary font-mono text-[14px]">Soluciones personalizadas</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Cómo funciona Section -->
+<section class="py-24">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<span class="text-primary text-[13px] font-medium tracking-[0.4px] block mb-2 uppercase">Metodología</span>
+<h2 class="text-[40px] font-semibold tracking-[-1.0px] text-ink mb-8">Protocolo de limpieza en 4 pasos</h2>
+<div class="space-y-10">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-10 h-10 rounded-full border border-hairline flex items-center justify-center text-primary font-bold">1</div>
+<div>
+<h4 class="text-ink font-medium text-[18px] mb-1">Análisis de gases inicial (Baseline)</h4>
+<p class="text-ink-subtle leading-relaxed">Medimos los niveles actuales de emisiones para establecer un punto de referencia técnico.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-10 h-10 rounded-full border border-hairline flex items-center justify-center text-primary font-bold">2</div>
+<div>
+<h4 class="text-ink font-medium text-[18px] mb-1">Generador HHO conectado al motor</h4>
+<p class="text-ink-subtle leading-relaxed">Inyectamos gas orto-hidrógeno altamente reactivo directamente en la admisión de aire.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-10 h-10 rounded-full border border-hairline flex items-center justify-center text-primary font-bold">3</div>
+<div>
+<h4 class="text-ink font-medium text-[18px] mb-1">Ciclo 30-80 min</h4>
+<p class="text-ink-subtle leading-relaxed">Limpieza profunda de cámaras de combustión, válvulas, inyectores y sistema de escape.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-10 h-10 rounded-full border border-hairline flex items-center justify-center text-primary font-bold">4</div>
+<div>
+<h4 class="text-ink font-medium text-[18px] mb-1">Análisis de gases final con certificado</h4>
+<p class="text-ink-subtle leading-relaxed">Verificación de resultados y entrega de reporte técnico de reducción de emisiones.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square bg-surface-1 border border-hairline rounded-xl overflow-hidden flex items-center justify-center p-8">
+<img alt="Generador HHO Profesional" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhc0scn4AllLF_8FQtHwW1v9a32AmyJHqOuKMXFkbeeZG9bT8sp-Yke7fVhwir4PV_jmCmSI08LcuQ4GZQlVKwEtgKDn0Skc4SdK3SRuol9nqpr267sp-zJUS8IdsiPNZ3POGXphi-yOUh-rj59ZVYlmqNheJQltMDhu2s-aQk8YTQohD2c2fNR8ROhYrUiIXVplciaeuJKQLyujGZJ9iJcWkNYaDVfQkhakFsgqmubjEaRnkmdijJPjfg"/>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-primary text-canvas px-6 py-4 rounded-lg shadow-xl hidden md:block">
+<div class="text-[24px] font-bold">30 min</div>
+<div class="text-[12px] font-medium uppercase tracking-wider opacity-80">Tiempo Mínimo</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Statistics Section -->
+<section class="py-24 border-y border-hairline bg-surface-1/20">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-[32px] font-semibold tracking-tight text-ink">Impacto Ambiental Real</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+<div>
+<div class="text-[64px] font-semibold text-primary tracking-[-2px] mb-2 leading-none">76%</div>
+<div class="text-ink font-medium mb-1">Reducción HC</div>
+<p class="text-ink-subtle text-sm px-8">Hidrocarburos no quemados eliminados significativamente del escape.</p>
+</div>
+<div>
+<div class="text-[64px] font-semibold text-primary tracking-[-2px] mb-2 leading-none">74%</div>
+<div class="text-ink font-medium mb-1">Reducción CO</div>
+<p class="text-ink-subtle text-sm px-8">Monóxido de carbono tóxico reducido para un aire más limpio.</p>
+</div>
+<div>
+<div class="text-[64px] font-semibold text-primary tracking-[-2px] mb-2 leading-none">75%</div>
+<div class="text-ink font-medium mb-1">Reducción NOx</div>
+<p class="text-ink-subtle text-sm px-8">Óxidos de nitrógeno reducidos gracias a una combustión más eficiente.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-32">
+<div class="max-w-[1000px] mx-auto px-6">
+<div class="bg-surface-1 border border-hairline-strong rounded-xl p-12 md:p-20 text-center relative overflow-hidden group">
+<div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<h2 class="text-[40px] font-semibold tracking-[-1.0px] text-ink mb-6 relative z-10">
+                        ¿Listo para mejorar tu motor?
+                    </h2>
+<p class="text-ink-muted text-[18px] mb-10 max-w-xl mx-auto relative z-10">
+                        Mejoramos tu motor, el planeta y tu bolsillo te lo agradecen. Agenda hoy mismo tu cita de descarbonización.
+                    </p>
+<a class="inline-flex items-center gap-3 bg-primary hover:bg-primary-hover text-canvas px-10 py-4 rounded-lg font-bold text-[18px] transition-all relative z-10 shadow-xl shadow-primary/20 hover:translate-y-[-2px]" href="https://wa.me/573147030001" target="_blank">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                        Contactar vía WhatsApp
+                    </a>
+<div class="mt-8 text-ink-subtle text-[14px] relative z-10">
+                        Atención inmediata de Lunes a Sábado.
+                    </div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#010102] border-t border-[#23252a]">
+<div class="max-w-[1280px] mx-auto py-24 px-8 grid grid-cols-2 md:grid-cols-4 gap-12">
+<div class="col-span-2 md:col-span-1">
+<div class="font-display text-[22px] font-bold tracking-[-0.4px] text-[#f7f8f8] mb-6">HYDROCELL</div>
+<p class="text-[#8a8f98] text-[14px] leading-relaxed max-w-xs">
+                    Mejoramos tu motor, el planeta y tu bolsillo te lo agradecen. Innovación colombiana desde 2013.
+                </p>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="text-ink text-[14px] font-semibold mb-2">Producto</h4>
+<a class="text-[#8a8f98] text-[14px] hover:text-[#f7f8f8] transition-colors" href="#">Tecnología HHO</a>
+<a class="text-[#8a8f98] text-[14px] hover:text-[#f7f8f8] transition-colors" href="#">Resultados</a>
+<a class="text-[#8a8f98] text-[14px] hover:text-[#f7f8f8] transition-colors" href="#">Sedes</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="text-ink text-[14px] font-semibold mb-2">Compañía</h4>
+<a class="text-[#8a8f98] text-[14px] hover:text-[#f7f8f8] transition-colors" href="#">Sobre nosotros</a>
+<a class="text-[#8a8f98] text-[14px] hover:text-[#f7f8f8] transition-colors" href="#">Blog</a>
+<a class="text-[#8a8f98] text-[14px] hover:text-[#f7f8f8] transition-colors" href="#">Carreras</a>
+<a class="text-[#8a8f98] text-[14px] hover:text-[#f7f8f8] transition-colors" href="#">Soporte</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="text-ink text-[14px] font-semibold mb-2">Legal</h4>
+<a class="text-[#8a8f98] text-[14px] hover:text-[#f7f8f8] transition-colors" href="#">Privacidad</a>
+<a class="text-[#8a8f98] text-[14px] hover:text-[#f7f8f8] transition-colors" href="#">Términos</a>
+<a class="text-[#8a8f98] text-[14px] hover:text-[#f7f8f8] transition-colors" href="#">Cookies</a>
+<a class="text-[#8a8f98] text-[14px] hover:text-[#f7f8f8] transition-colors" href="#">Contacto</a>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-8 py-8 border-t border-hairline text-[#8a8f98] text-[12px] flex flex-col md:flex-row justify-between items-center gap-4">
+<div>© 2024 HYDROCELL S.A.S. Todos los derechos reservados.</div>
+<div class="flex gap-6">
+<span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary-accent"></span> Medellín &amp; Bogotá</span>
+<span>NIT: 900.XXX.XXX-X</span>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for cards
+        document.querySelectorAll('.group').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                // Subtle lift or secondary effects if needed
+            });
+        });
+
+        // Sticky header background shift
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-[#010102]');
+            } else {
+                header.classList.remove('bg-[#010102]');
+            }
+        });
+    </script>
+</body></html>

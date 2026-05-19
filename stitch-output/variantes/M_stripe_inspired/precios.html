@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        :root {
+            --primary: #00b9b5;
+            --primary-deep: #008f8b;
+            --ink: #0d253d;
+            --brand-dark: #002830;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--ink);
+            background-color: #ffffff;
+            -webkit-font-smoothing: antialiased;
+        }
+        .font-headline { font-family: 'Inter', sans-serif; font-weight: 300; }
+        .font-body { font-family: 'Inter', sans-serif; font-weight: 300; }
+        .tnum { font-variant-numeric: tabular-nums; }
+        
+        /* Stripe-like Gradient Mesh */
+        .hero-mesh {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 600px;
+            z-index: -1;
+            overflow: hidden;
+            background: #ffffff;
+        }
+        .mesh-blob {
+            position: absolute;
+            filter: blur(80px);
+            opacity: 0.4;
+            border-radius: 50%;
+        }
+
+        .cta-pill-active:active { transform: scale(0.95); transition: transform 0.2s; }
+        
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#00b9b5",
+                        "primary-deep": "#008f8b",
+                        "brand-dark-900": "#002830",
+                        ink: "#0d253d",
+                        "ink-secondary": "#273951",
+                        "ink-mute": "#64748d",
+                        hairline: "#e3e8ee",
+                        canvas: "#ffffff",
+                        "canvas-soft": "#f6fbfb",
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        headline: ["Inter", "sans-serif"],
+                        display: ["Inter", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        label: ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-white">
+<!-- Header / TopNavBar -->
+<header class="bg-white/90 backdrop-blur-sm dark:bg-[#002830]/90 border-b border-[#e3e8ee] dark:border-white/10 docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-headline font-light tracking-tighter text-[#0d253d] dark:text-white">
+                HYDROCELL
+            </div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-[#0d253d] dark:text-white/80 hover:text-[#00b9b5] transition-colors font-headline font-light tracking-tight text-[15px]" href="#">Servicios</a>
+<a class="text-[#00b9b5] font-medium font-headline tracking-tight text-[15px]" href="#">Sedes</a>
+<a class="text-[#0d253d] dark:text-white/80 hover:text-[#00b9b5] transition-colors font-headline font-light tracking-tight text-[15px]" href="#">Tecnología</a>
+<a class="text-[#0d253d] dark:text-white/80 hover:text-[#00b9b5] transition-colors font-headline font-light tracking-tight text-[15px]" href="#">Nosotros</a>
+</nav>
+<button class="bg-[#00b9b5] text-white px-5 py-2 rounded-full font-medium text-[14px] hover:opacity-90 transition-all active:scale-95 duration-200">
+                Agendar Cita
+            </button>
+</div>
+</header>
+<main class="relative">
+<!-- Hero Mesh Background -->
+<div class="hero-mesh">
+<div class="mesh-blob bg-[#faf6f0] w-[600px] h-[600px] -top-40 -left-20"></div>
+<div class="mesh-blob bg-[#a7e8d7] w-[500px] h-[500px] top-0 right-0"></div>
+<div class="mesh-blob bg-[#c5d4ff] w-[400px] h-[400px] bottom-0 left-1/4"></div>
+<div class="mesh-blob bg-[#80e7e3] w-[600px] h-[400px] top-20 left-1/3"></div>
+</div>
+<!-- Pricing Section -->
+<section class="max-w-7xl mx-auto px-6 py-24 relative z-10">
+<div class="mb-16">
+<p class="text-[10px] font-bold tracking-[0.1em] text-primary uppercase mb-4">Descarbonización de motores</p>
+<h1 class="text-[48px] md:text-[56px] font-headline leading-[1.03] tracking-[-1.4px] text-ink max-w-2xl">
+                    Tarifas según cilindraje
+                </h1>
+<p class="mt-6 text-lg text-ink-secondary max-w-xl font-light">
+                    Mejoramos tu motor, el planeta y tu bolsillo te lo agradecen. Proceso rápido de 30 a 80 minutos con hidrógeno verde.
+                </p>
+</div>
+<!-- Pricing Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-white border border-hairline rounded-xl p-8 flex flex-col shadow-[0_1px_3px_rgba(0,55,112,0.08)] hover:shadow-[0_8px_24px_rgba(0,55,112,0.08)] transition-all duration-300">
+<div class="mb-6">
+<h3 class="text-ink-mute text-[13px] font-bold tracking-[0.1em] uppercase mb-2">Automóvil Standard</h3>
+<div class="flex items-baseline">
+<span class="text-[32px] font-headline tracking-[-0.64px] tnum">$170.000</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center text-ink-secondary text-[15px]">
+<span class="material-symbols-outlined mr-3 text-primary text-[20px]">directions_car</span>
+                            Auto 1.000-1.990cc
+                        </li>
+<li class="flex items-center text-ink-secondary text-[15px]">
+<span class="material-symbols-outlined mr-3 text-primary text-[20px]">schedule</span>
+                            35 min de proceso
+                        </li>
+<li class="flex items-center text-ink-secondary text-[15px]">
+<span class="material-symbols-outlined mr-3 text-primary text-[20px]">water_drop</span>
+                            1.000L de Hidrógeno
+                        </li>
+</ul>
+<a class="bg-primary text-white text-center py-3 rounded-full font-medium text-[16px] cta-pill-active hover:opacity-90 transition-all flex items-center justify-center gap-2" href="https://wa.me/573147030001">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                        WhatsApp
+                    </a>
+</div>
+<!-- Card 2 -->
+<div class="bg-white border border-hairline rounded-xl p-8 flex flex-col shadow-[0_1px_3px_rgba(0,55,112,0.08)] hover:shadow-[0_8px_24px_rgba(0,55,112,0.08)] transition-all duration-300">
+<div class="mb-6">
+<h3 class="text-ink-mute text-[13px] font-bold tracking-[0.1em] uppercase mb-2">Automóvil Premium</h3>
+<div class="flex items-baseline">
+<span class="text-[32px] font-headline tracking-[-0.64px] tnum">$200.000</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center text-ink-secondary text-[15px]">
+<span class="material-symbols-outlined mr-3 text-primary text-[20px]">directions_car</span>
+                            Auto 2.000-2.990cc
+                        </li>
+<li class="flex items-center text-ink-secondary text-[15px]">
+<span class="material-symbols-outlined mr-3 text-primary text-[20px]">schedule</span>
+                            40 min de proceso
+                        </li>
+<li class="flex items-center text-ink-secondary text-[15px]">
+<span class="material-symbols-outlined mr-3 text-primary text-[20px]">water_drop</span>
+                            1.300L de Hidrógeno
+                        </li>
+</ul>
+<a class="bg-primary text-white text-center py-3 rounded-full font-medium text-[16px] cta-pill-active hover:opacity-90 transition-all flex items-center justify-center gap-2" href="https://wa.me/573147030001">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                        WhatsApp
+                    </a>
+</div>
+<!-- Card 3 (FEATURED) -->
+<div class="bg-[#002830] text-white rounded-xl p-8 flex flex-col shadow-[0_8px_24px_rgba(0,55,112,0.12)] scale-105 z-20 relative">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Más solicitado</div>
+<div class="mb-6">
+<h3 class="text-primary text-[13px] font-bold tracking-[0.1em] uppercase mb-2">SUV &amp; Familiar</h3>
+<div class="flex items-baseline">
+<span class="text-[32px] font-headline tracking-[-0.64px] tnum">$240.000</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center text-white/90 text-[15px]">
+<span class="material-symbols-outlined mr-3 text-primary text-[20px]">airport_shuttle</span>
+                            SUV 3.000-5.000cc
+                        </li>
+<li class="flex items-center text-white/90 text-[15px]">
+<span class="material-symbols-outlined mr-3 text-primary text-[20px]">schedule</span>
+                            60 min de proceso
+                        </li>
+<li class="flex items-center text-white/90 text-[15px]">
+<span class="material-symbols-outlined mr-3 text-primary text-[20px]">water_drop</span>
+                            1.600L de Hidrógeno
+                        </li>
+</ul>
+<a class="bg-primary text-white text-center py-3 rounded-full font-medium text-[16px] cta-pill-active hover:opacity-90 transition-all flex items-center justify-center gap-2" href="https://wa.me/573147030001">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                        WhatsApp
+                    </a>
+</div>
+<!-- Card 4 -->
+<div class="bg-white border border-hairline rounded-xl p-8 flex flex-col shadow-[0_1px_3px_rgba(0,55,112,0.08)] hover:shadow-[0_8px_24px_rgba(0,55,112,0.08)] transition-all duration-300">
+<div class="mb-6">
+<h3 class="text-ink-mute text-[13px] font-bold tracking-[0.1em] uppercase mb-2">Carga &amp; Pesados</h3>
+<div class="flex items-baseline">
+<span class="text-[32px] font-headline tracking-[-0.64px] tnum">$350.000</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center text-ink-secondary text-[15px]">
+<span class="material-symbols-outlined mr-3 text-primary text-[20px]">local_shipping</span>
+                            Camión 5.000-10.000cc
+                        </li>
+<li class="flex items-center text-ink-secondary text-[15px]">
+<span class="material-symbols-outlined mr-3 text-primary text-[20px]">schedule</span>
+                            80 min de proceso
+                        </li>
+<li class="flex items-center text-ink-secondary text-[15px]">
+<span class="material-symbols-outlined mr-3 text-primary text-[20px]">water_drop</span>
+                            2.500L de Hidrógeno
+                        </li>
+</ul>
+<a class="bg-primary text-white text-center py-3 rounded-full font-medium text-[16px] cta-pill-active hover:opacity-90 transition-all flex items-center justify-center gap-2" href="https://wa.me/573147030001">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                        WhatsApp
+                    </a>
+</div>
+<!-- Card 5 -->
+<div class="bg-white border border-hairline rounded-xl p-8 flex flex-col shadow-[0_1px_3px_rgba(0,55,112,0.08)] hover:shadow-[0_8px_24px_rgba(0,55,112,0.08)] transition-all duration-300">
+<div class="mb-6">
+<h3 class="text-ink-mute text-[13px] font-bold tracking-[0.1em] uppercase mb-2">Moto Urbana</h3>
+<div class="flex items-baseline">
+<span class="text-[32px] font-headline tracking-[-0.64px] tnum">$100.000</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center text-ink-secondary text-[15px]">
+<span class="material-symbols-outlined mr-3 text-primary text-[20px]">two_wheeler</span>
+                            Moto 100-500cc
+                        </li>
+<li class="flex items-center text-ink-secondary text-[15px]">
+<span class="material-symbols-outlined mr-3 text-primary text-[20px]">schedule</span>
+                            30 min de proceso
+                        </li>
+<li class="flex items-center text-ink-secondary text-[15px]">
+<span class="material-symbols-outlined mr-3 text-primary text-[20px]">water_drop</span>
+                            800L de Hidrógeno
+                        </li>
+</ul>
+<a class="bg-primary text-white text-center py-3 rounded-full font-medium text-[16px] cta-pill-active hover:opacity-90 transition-all flex items-center justify-center gap-2" href="https://wa.me/573147030001">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                        WhatsApp
+                    </a>
+</div>
+<!-- Card 6 -->
+<div class="bg-white border border-hairline rounded-xl p-8 flex flex-col shadow-[0_1px_3px_rgba(0,55,112,0.08)] hover:shadow-[0_8px_24px_rgba(0,55,112,0.08)] transition-all duration-300">
+<div class="mb-6">
+<h3 class="text-ink-mute text-[13px] font-bold tracking-[0.1em] uppercase mb-2">Moto Alto C.</h3>
+<div class="flex items-baseline">
+<span class="text-[32px] font-headline tracking-[-0.64px] tnum">$150.000</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center text-ink-secondary text-[15px]">
+<span class="material-symbols-outlined mr-3 text-primary text-[20px]">two_wheeler</span>
+                            Moto 500-1.000cc
+                        </li>
+<li class="flex items-center text-ink-secondary text-[15px]">
+<span class="material-symbols-outlined mr-3 text-primary text-[20px]">schedule</span>
+                            30 min de proceso
+                        </li>
+<li class="flex items-center text-ink-secondary text-[15px]">
+<span class="material-symbols-outlined mr-3 text-primary text-[20px]">water_drop</span>
+                            1.000L de Hidrógeno
+                        </li>
+</ul>
+<a class="bg-primary text-white text-center py-3 rounded-full font-medium text-[16px] cta-pill-active hover:opacity-90 transition-all flex items-center justify-center gap-2" href="https://wa.me/573147030001">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                        WhatsApp
+                    </a>
+</div>
+</div>
+<!-- Stats Bar -->
+<div class="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 bg-canvas-soft p-12 rounded-xl border border-hairline">
+<div class="text-center">
+<p class="text-[26px] font-headline tracking-tight text-primary tnum">-76%</p>
+<p class="text-ink-mute text-[13px] uppercase tracking-wider font-bold">Hidrocarburos</p>
+</div>
+<div class="text-center">
+<p class="text-[26px] font-headline tracking-tight text-primary tnum">-74%</p>
+<p class="text-ink-mute text-[13px] uppercase tracking-wider font-bold">Monóxido de Carbono</p>
+</div>
+<div class="text-center">
+<p class="text-[26px] font-headline tracking-tight text-primary tnum">-75%</p>
+<p class="text-ink-mute text-[13px] uppercase tracking-wider font-bold">Óxidos Nitrosos</p>
+</div>
+<div class="text-center">
+<p class="text-[26px] font-headline tracking-tight text-primary tnum">30-80</p>
+<p class="text-ink-mute text-[13px] uppercase tracking-wider font-bold">Minutos de Proceso</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-7xl mx-auto px-6 py-24 text-center">
+<h2 class="text-[32px] font-headline tracking-[-0.64px] mb-8 max-w-2xl mx-auto">¿Listo para recuperar el torque y eficiencia de tu motor?</h2>
+<div class="flex flex-col md:flex-row items-center justify-center gap-4">
+<a class="bg-primary text-white px-8 py-3 rounded-full font-medium text-[16px] hover:opacity-90 transition-all shadow-lg active:scale-95 duration-200" href="#">
+                    Agendar Cita Ahora
+                </a>
+<a class="border border-primary text-primary px-8 py-3 rounded-full font-medium text-[16px] hover:bg-canvas-soft transition-all active:scale-95 duration-200" href="#">
+                    Ver Sedes Disponibles
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-[#002830] border-t border-[#e3e8ee] dark:border-white/10 full-width bottom-0">
+<div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12">
+<div class="col-span-2">
+<div class="text-lg font-headline font-light tracking-tighter text-[#0d253d] dark:text-white mb-6">HYDROCELL</div>
+<p class="font-body font-light text-[13px] tracking-normal leading-relaxed text-[#64748d] dark:text-white/60">
+                    © 2013-2024 HYDROCELL S.A.S. Descarbonización de motores con hidrógeno verde Colombia.
+                </p>
+</div>
+<div>
+<h4 class="text-[13px] font-bold text-[#0d253d] dark:text-white mb-4 uppercase tracking-wider">Sedes Medellín</h4>
+<ul class="space-y-3">
+<li><a class="font-body font-light text-[13px] text-[#64748d] dark:text-white/60 hover:text-[#00b9b5] transition-colors" href="#">Sede Medellín Norte</a></li>
+<li><a class="font-body font-light text-[13px] text-[#64748d] dark:text-white/60 hover:text-[#00b9b5] transition-colors" href="#">Sede Medellín Sur</a></li>
+<li><a class="font-body font-light text-[13px] text-[#64748d] dark:text-white/60 hover:text-[#00b9b5] transition-colors" href="#">Sede Medellín Centro</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[13px] font-bold text-[#0d253d] dark:text-white mb-4 uppercase tracking-wider">Bogotá</h4>
+<ul class="space-y-3">
+<li><a class="font-body font-light text-[13px] text-[#64748d] dark:text-white/60 hover:text-[#00b9b5] transition-colors" href="#">Sede Bogotá</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[13px] font-bold text-[#0d253d] dark:text-white mb-4 uppercase tracking-wider">Soporte</h4>
+<ul class="space-y-3">
+<li><a class="font-body font-light text-[13px] text-[#64748d] dark:text-white/60 hover:text-[#00b9b5] transition-colors" href="#">WhatsApp</a></li>
+<li><a class="font-body font-light text-[13px] text-[#64748d] dark:text-white/60 hover:text-[#00b9b5] transition-colors" href="#">Términos</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<script>
+        // Simple parallax or atmospheric effects
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            const blobs = document.querySelectorAll('.mesh-blob');
+            blobs.forEach((blob, index) => {
+                const speed = (index + 1) * 20;
+                blob.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+            });
+        });
+    </script>
+</body></html>
